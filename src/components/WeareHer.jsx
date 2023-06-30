@@ -50,10 +50,10 @@ const WeareHer = () => {
   return (
     <motion.div
       initial={{
-        x: -100,
-        opacity: 0.1,
+      
+        opacity: 0.5,
       }}
-      whileInView={{ x: 0, opacity: 1 }}
+      whileInView={{  opacity: 1 }}
       transition={{ duration: 0.7 }}
       
       className="w-full bg-white z-[999] relative px-[30px] py-10 md:py-32  h-fit"

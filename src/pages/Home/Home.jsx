@@ -57,11 +57,11 @@ const Home = () => {
         />
         <motion.div
           initial={{
-            x: 100,
-            opacity: 0.1,
+            
+            opacity: 0.3,
           }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.7 }}
+          whileInView={{  opacity: 1 }}
+          transition={{ duration: 0.5 }}
           className="md:px-[50px]    p-[5px] py-14 relative w-full md:w-[80%] mx-auto h-fit  items-center flex flex-col justify-between"
         >
           <h1 className="md:text-4xl text-2xl md:text-left text-center mb-2">
@@ -104,9 +104,9 @@ const Home = () => {
       </div>
       <WeareHer />
       <motion.div
-        initial={{ opacity: 0.1 }}
+        initial={{ opacity: 0.3 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 1 }}
         className="w-full py-[10vh] z-[555] relative flex flex-col gap-12 items-center justify-center h-fit md:h-[40vh] bg-red-800 text-white"
       >
         <h1 className="font-[800] text-[35px] mt-12 md:text-[55px] ">
@@ -128,11 +128,11 @@ const Home = () => {
       {/* //contactus section */}
       <motion.div
         initial={{
-          x: -100,
-          opacity: 0.1,
+     
+          opacity: 0.7,
         }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.4 }}
         
         className="w-full py-8 md:py-[10vh] z-[555] relative flex flex-col gap-8 items-center justify-center h-fit md:h-[35vh] text-red-800 bg-white"
       >
