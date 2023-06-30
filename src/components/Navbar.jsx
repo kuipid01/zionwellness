@@ -95,8 +95,7 @@ const Navbar = () => {
       </nav>
 
       {/* ////navmobile */}
-     { 
-     navMobile && <div
+   <div
         style={navStyle}
         className={`w-full md:hidden h-screen left-0 fixed ${
           navMobile ? "top-[15vh]" : "-top-[200vh]"
@@ -122,7 +121,7 @@ const Navbar = () => {
             </div>
           </ul>
         </div>
-      </div> }
+      </div> 
     </div>
   );
 };
