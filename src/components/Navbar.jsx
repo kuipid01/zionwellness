@@ -51,7 +51,7 @@ const Navbar = () => {
   });
   
   let navStyle = {
-    transition: "top 0.5s ease-in-out",
+    transition: "top 1s ease-in-out",
   };
   return (
     <div
