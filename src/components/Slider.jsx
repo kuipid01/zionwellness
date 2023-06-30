@@ -54,7 +54,7 @@ setSlideValue(-index*100)
 </div>
 <div className='w-full  absolute top-1/2 left-1/2 -translate-y-1/2 text-white flex justify-center text-center
 flex-col -translate-x-1/2'>
-<h1 className='text-[30px] md:text-[60px] md:leading-[100px] font-extrabold'>Your Wellness, <br className='flex md:hidden' />  Our Priority</h1>
+<h1 className='text-[40px] md:text-[60px] md:leading-[100px] font-extrabold'>Your Wellness, <br className='flex md:hidden' />  Our Priority</h1>
 <button className='md:w-fit w-[70%] px-10 py-4 mx-auto font-bold uppercase bg-red-900'>Learn More</button>
 </div>
 
