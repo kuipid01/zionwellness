@@ -98,7 +98,7 @@ const Navbar = () => {
    <div
         style={navStyle}
         className={`w-full md:hidden h-screen left-0 fixed ${
-          navMobile ? "top-[15vh]" : "-top-[200vh]"
+          navMobile ? "top-[15vh]" : "-top-[100vh]"
         }  bg-red-600`}
       >
         <div className="  w-full px-5 py-7 text-white h-full md:hidden flex flex-col items-center justify-center">
