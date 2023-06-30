@@ -41,7 +41,7 @@ setSlideValue(-index*100)
     <div className='w-full flex relative overflow-hidden h-[80vh] md:h-[85vh]'>
         <div style={sliderStyle} className='flex w-fit h-full'>
             {
-                images.map((image) => <div className='w-screen  h-full'>
+                images.map((image) => <div key={image} className='w-screen  h-full'>
                     <img src={image} className='w-full h-full object-cover' alt="image" />
                 </div> )
             }
