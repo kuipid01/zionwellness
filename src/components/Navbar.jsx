@@ -30,7 +30,7 @@ const Navbar = () => {
     },
   ]);
   const [navShow, setNavShow] = useState(false);
-
+  const [navMobile, setNavMobile] = useState(false);
   const changeLink = (id) => {
     const newLinks = navLinks.map((link) => ({
       ...link,
@@ -49,7 +49,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", isActive);
     };
   });
-  const [navMobile, setNavMobile] = useState(true);
+  
   let navStyle = {
     transition: "top 0.5s ease-in-out",
   };
@@ -93,7 +93,10 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <div
+
+      {/* ////navmobile */}
+     { 
+     navMobile && <div
         style={navStyle}
         className={`w-full md:hidden h-screen left-0 fixed ${
           navMobile ? "top-[15vh]" : "-top-[200vh]"
@@ -119,7 +122,7 @@ const Navbar = () => {
             </div>
           </ul>
         </div>
-      </div>
+      </div> }
     </div>
   );
 };
