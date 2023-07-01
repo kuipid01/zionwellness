@@ -11,9 +11,9 @@ const Footer = () => {
       <img
         src="https://images.unsplash.com/photo-1517524285303-d6fc683dddf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNtYXJrJTIwZGVzaWducyUyMHdpdGglMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
         alt=""
-        className="w-full absolute z-10 max-h-full object-cover h-full top-0 left-0 "
+        className="w-full absolute max-h-full object-cover h-full top-0 left-0 "
       />
-      <div  className="w-full z-10 max-h-full bg-red-500 opacity-70 absolute object-cover h-full top-0 left-0 ">
+      <div  className="w-full max-h-full bg-red-500 opacity-70 absolute object-cover h-full top-0 left-0 ">
 
       </div>
       <div className="md:w-[80%] z-[9999] w-full px-3 py-20 text-white justify-between gap-9 md:gap-0 flex md:flex-row flex-col mx-auto h-fit ">
