@@ -1,14 +1,35 @@
-import { useState } from 'react'
+
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Contact";
 
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import SharedLayout from "./components/SharedLayout";
+import Testimonials from "./pages/Testimonials";
+import Services from "./pages/Services";
+import About from "./pages/About";
+import Team from "./pages/Team";
+
+// import NotFound from './components/NotFound/NotFound'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div className="App">
+      {/* Routes for pages */}
+     {/* Routes for pages */}
+ <Routes >
+ <Route path='/' element={<SharedLayout />} >
+   <Route index element= {<Home />} />
+   <Route path='/contact' element={<Contact />} />
+   <Route path='/testimonials' element={<Testimonials />} />
+   <Route path='/about' element={<About/>} />
+   <Route path='/services' element={<Services />} />
+   <Route path='/team' element={<Team />} />
+ </Route>
+ {/* <Route path='/*' element={<NotFound />} /> */}
+</Routes >
+    </div>
   )
 }
 

@@ -6,15 +6,18 @@ import WeareHer from "../../components/WeareHer";
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import Contact from "../Contact";
 const Home = () => {
   return (
     <div className="w-full h-full relative">
-      <img
+      {/* <img
         className="w-full h-full absolute  top-0 left-0 object-cover b"
         src="/assets/bg.jpg"
-      />
-      <Navbar />
-      <Slider />
+      /> */}
+ 
+  
+    
+       <Slider />
       <motion.div
         initial={{ opacity: 0.1 }}
         whileInView={{ opacity: 1 }}
@@ -142,8 +145,9 @@ const Home = () => {
         <div className="w-fit gap-[3rem] text-4xl pb-[3rem] mx-auto flex justify-between">
           <FaFacebook /> <FaInstagram />
         </div>
-      </motion.div>
-      <Footer />
+      </motion.div>  
+   
+ 
     </div>
   );
 };
