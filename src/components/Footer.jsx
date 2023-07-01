@@ -7,7 +7,7 @@ import {
 import { FaCopyright } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="w-full z-10 flex flex-col gap-2 relative justify-center items-center md:h-[50vh] h-[]80vh py-5">
+    <div className="w-full z-[9999] flex flex-col gap-2 relative justify-center items-center md:h-[50vh] h-[]80vh py-5">
       <img
         src="https://images.unsplash.com/photo-1517524285303-d6fc683dddf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNtYXJrJTIwZGVzaWducyUyMHdpdGglMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
         alt=""
