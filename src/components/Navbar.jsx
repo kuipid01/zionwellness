@@ -73,7 +73,7 @@ const Navbar = () => {
     <div
       className={`w-full sticky top-0 left-0 z-[9999] transition-all  flex justify-center bg-white  items-center ${
         navShow ? "h-[15vh] " : "h-[20vh] "
-      } z-[99999]`}
+      } z-[9999999]`}
     >
       <nav className="w-[80%] flex justify-between h-full items-center">
         <div>ZIONS HEALTH SERVICES</div>
@@ -117,7 +117,7 @@ const Navbar = () => {
         style={navStyle}
         className={`w-full md:hidden h-screen left-0 fixed ${
           navMobile ? "top-[15vh]" : "-top-[100vh]"
-        } z-[999999] bg-red-600`}
+        } z-[999] bg-red-600`}
       >
         <div className="  w-full px-5 py-7 text-white h-full md:hidden flex flex-col items-center justify-center">
           <ul className="flex flex-col items-end h-full  w-full gap-5 uppercase text-lg font-[400]">
