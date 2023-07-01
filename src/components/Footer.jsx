@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="w-[300px] relative flex justify-center py-1 items-center bg-white h-[50px]">
             <input
               type="text"
-              className="w-full h-full text-black outline-none pl-3 bg-transparent"
+              className="w-full placeholder:text-[12px] md:placeholder:text-[20px] h-full text-black outline-none pl-3 bg-transparent"
               placeholder="Enter your email to join"
             />
             <button className="absolute flex font-[700] px-5  bg-red-700 justify-center items-center gap-2 right-0 h-full ">
