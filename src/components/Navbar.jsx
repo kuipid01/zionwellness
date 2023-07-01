@@ -117,7 +117,7 @@ const Navbar = () => {
         style={navStyle}
         className={`w-full md:hidden h-screen left-0 fixed ${
           navMobile ? "top-[15vh]" : "-top-[100vh]"
-        }  bg-red-600`}
+        } z-[999999] bg-red-600`}
       >
         <div className="  w-full px-5 py-7 text-white h-full md:hidden flex flex-col items-center justify-center">
           <ul className="flex flex-col items-end h-full  w-full gap-5 uppercase text-lg font-[400]">
