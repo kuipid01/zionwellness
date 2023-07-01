@@ -73,7 +73,7 @@ const Navbar = () => {
     <div
       className={`w-full sticky top-0 left-0 z-[9999] transition-all  flex justify-center bg-white  items-center ${
         navShow ? "h-[15vh] " : "h-[20vh] "
-      } `}
+      } z-[99999]`}
     >
       <nav className="w-[80%] flex justify-between h-full items-center">
         <div>ZIONS HEALTH SERVICES</div>
