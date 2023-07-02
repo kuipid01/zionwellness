@@ -4,28 +4,85 @@ const Services = () => {
   const [services, setServices] = useState([
     {
       id: 1,
-      details: "Assistance with Social & Community Participation",
+      details: "Accommodation/Tenancy Assistance ",
     },
     {
       id: 2,
-      details: "Transport",
+      details: "	Assistance to Access and Maintain Employment or Higher Education ",
     },
     {
       id: 3,
-      details: "Assistance with daily life",
+      details: "Assistive Products for Personal Care and Safety ",
     },
     {
       id: 4,
-      details: "Home Modification",
+      details: "	Assistance with Daily Personal Activities (High-Intensity)",
     },
     {
       id: 5,
-      details: "Improved Daily living",
+      details: "	Personal Mobility Equipment ",
     },
     {
       id: 6,
-      details: "Improved Life Choices",
+      details: "Assistance with Life Stage Transitions and Support ",
     },
+    {
+      id: 7,
+      details: "	Specialised Driver Training ",
+    },
+    {
+      id: 8,
+      details: "	Assistance with Daily Personal Activities  ",
+    },
+    {
+      id: 9,
+      details: "	Assistance with Travel and Transport ",
+    },
+    {
+      id: 10,
+      details: "	Vehicle Modifications ",
+    },
+    {
+      id: 11,
+      details: "	Assistance Animals  ",
+    },
+    {
+      id: 12,
+      details: "Custom Prosthetics ",
+    },
+    {
+      id: 13,
+      details: "	Specialist Disability Accommodation (SDA)  ",
+    },
+    {
+      id: 14,
+      details: "	NDIS Planning and Plan Management ",
+    },
+    {
+      id: 15,
+      details: "	Exercise Physiology and Personal Wellbeing Activities  ",
+    },
+    {
+      id: 16,
+      details: "	Assistance with Household Tasks ",
+    },
+    {
+      id: 17,
+      details: "Hearing Equipment  ",
+    },
+    {
+      id: 18,
+      details: "	Development of Daily Living and Life Skills  ",
+    },
+    {
+      id: 19,
+      details: "	Specialised Driver Training ",
+    },
+    {
+      id: 20,
+      details: "		Community Nursing Care  ",
+    },
+   
   ]);
   return (
     <div className=" flex flex-col justify-center relative items-center w-full h-full ">
@@ -64,10 +121,10 @@ const Services = () => {
             {services.map((test, index) => (
               <div
                 key={test.id}
-                className="md:w-[20%] w-full text-xl  flex flex-col justify-center items-center py-4 px-4 items-left md:h-[200px] h-fit  bg-white text-gray-700"
+                className="md:w-[20%] w-full text-xl  flex flex-col justify-center items-center py-3 px-4 items-left  h-fit  bg-white text-gray-700"
               >
                 <small className="text-2xl mb-1"> {index + 1}. </small>
-                <p className=" text-center "> "{test.details}"</p>
+                <p className=" text-center text-[15px]"> "{test.details}"</p>
               </div>
             ))}
           </div>

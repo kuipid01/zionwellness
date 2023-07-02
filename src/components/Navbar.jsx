@@ -104,10 +104,10 @@ const Navbar = () => {
               </Link>
             ))}
             <li className="w-[2px] bg-gray-400 text-gray-400 h-[20px]"></li>
-            <div className="flex text-2xl gap-5 ">
+            {/* <div className="flex text-2xl gap-5 ">
               <AiOutlineShoppingCart className="cursor-pointer hover:text-red-300" />
               <BiUser className="cursor-pointer hover:text-red-300" />
-            </div>
+            </div> */}
           </ul>
         </div>
       </nav>

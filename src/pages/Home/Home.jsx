@@ -28,7 +28,7 @@ const Home = () => {
           <div className="w-full md:w-[50%] h-full flex items-center justify-center">
             <p className="font-[300] flex justify-center items-center h-full w-fit relative text-[20px] md:text-[20px] text-gray-700 text-left">
               <FaQuoteLeft className="md:text-4xl text-2xl   text-gray-300 absolute top-0 left-0 md:top-0" />
-              <span className="md:p-4 p-8 text-[17px]  md:text-[20px]">
+              <span className="md:p-4  md:text-[17px]">
                 Zion Wellness Services: Promoting well-being and providing
                 comprehensive support to individuals with disabilities. Our
                 dedicated team of professionals, including therapists,
@@ -106,7 +106,8 @@ const Home = () => {
         </motion.div>
       </div>
       <WeareHer />
-      <motion.div
+      {/* onlinebookingsection */}
+      {/* <motion.div
         initial={{ opacity: 0.3 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -127,7 +128,7 @@ const Home = () => {
             BOOK
           </button>
         </div>
-      </motion.div>
+      </motion.div> */}
       {/* //contactus section */}
       <motion.div
         initial={{
@@ -137,7 +138,7 @@ const Home = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.4 }}
         
-        className="w-full py-8 md:py-[10vh] z-[555] relative flex flex-col gap-8 items-center justify-center h-fit md:h-[35vh] text-red-800 bg-white"
+        className="w-full py-8 md:py-[10vh] z-[555] bg-red-800 relative flex flex-col gap-8 items-center justify-center h-fit md:h-[35vh] text-white"
       >
         <h1 className="font-[800] text-center text-[35px] mt-12 md:text-[55px] ">
           Connect with Booking
