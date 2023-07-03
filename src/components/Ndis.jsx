@@ -9,8 +9,8 @@ const Ndis = () => {
           physical, sensory, cognitive and psychosocial.{" "}
         </p>
         <p className="font-bold">
-          To find out if you are eligible for the NDIS, please visit the &nbsp
-          <a className="text-purple-700 ml-[2px]" href="https://www.ndis.gov.au/applying-access-ndis/am-i-eligible">
+          To find out if you are eligible for the NDIS, please visit the 
+          <a className="text-purple-700 ml-[3px]" href="https://www.ndis.gov.au/applying-access-ndis/am-i-eligible">
             official NDIS Eligibility Checklist.
           </a>
         </p>
