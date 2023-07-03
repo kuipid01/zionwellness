@@ -10,14 +10,14 @@ const Ndis = () => {
         </p>
         <p className="font-bold">
           To find out if you are eligible for the NDIS, please visit the &nbsp
-          <a className="text-purple-700" href="https://www.ndis.gov.au/applying-access-ndis/am-i-eligible">
+          <a className="text-purple-700 ml-[2px]" href="https://www.ndis.gov.au/applying-access-ndis/am-i-eligible">
             official NDIS Eligibility Checklist.
           </a>
         </p>
         <button className="w-fit  hover:-translate-y-[5px] rounded-[5px]  py-2 px-7 bg-purple-700 text-white font-[200]">Disabilty Services</button>
       </div>
       <div className="flex-1 hidden md:flex h-full">
-        <img className=" object-cover" src="https://scicarers.com.au/wp-content/uploads/elementor/thumbs/about-section-image-p7nkdvkukw4o9prz6jwwd7lockrbxep7iunles9g1c.jpg" alt="" />
+        <img className=" object-cover" src="https://img.freepik.com/free-photo/team-supporting-invalid-coworker_23-2148476555.jpg?w=1060&t=st=1688411445~exp=1688412045~hmac=c1bc6959666fe549f9447fb0eca78e04a383b776a07577aa8fb35fd9e9139ba5" alt="" />
       </div>
     </div>
   );
