@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import {
   AiOutlineShoppingCart,
@@ -76,7 +77,11 @@ const Navbar = () => {
       } z-[9999999]`}
     >
       <nav className="w-[80%] flex justify-between h-full items-center">
-        <div>ZIONS HEALTH SERVICES</div>
+        <div className={` ${
+        navShow ? "md:w-[100px] w-[100px] h-[100px] md:h-[100px]" : " w-[100px] h-[100px] md:w-[100px] md:h-[100px] "
+      }  transition-all  ` }>
+          <img src="/assets/2bg.png"  className="w-full h-full object-contain" alt="" />
+        </div>
         {navMobile ? (
           <AiOutlineClose
             onClick={() => setNavMobile(false)}

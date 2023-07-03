@@ -100,7 +100,7 @@ const Services = () => {
         <span>Services</span>  
         </h1>
         <div className="flex flex-1 flex-col">
-          <h1 className="md:text-3xl text-lg left-9 font-light md:font-semibold mb-4 text-purple-500">What services can we at Zion wellness deliver under the NDIS</h1>
+          <h1 className="md:text-3xl md:text-center text-lg left-9 font-light md:font-semibold mb-4 text-purple-900">What services can we at Zion Support Services deliver under the NDIS</h1>
           <p className=" md:leading-10 leading-6 text-gray-200 font-[300]">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sit
             officia laudantium ratione rem, quae autem labore corrupti, voluptas

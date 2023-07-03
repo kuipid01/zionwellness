@@ -1,4 +1,4 @@
-import React from "react";
+
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
 
 const Contact = () => {
@@ -13,7 +13,7 @@ const Contact = () => {
       </div>
       <div className="w-full z-[999] flex justify-center items-center bg-white">
         <div className="text-center z-[999] w-[80%] text-black gap-5 flex flex-col justify-center items-center">
-          <h1 className="md:text-5xl text-[35px] text-left md:py-8 py-5 font-[500]">Let's Get In Touch </h1>
+          <h1 className="md:text-5xl text-[35px] text-left md:py-8 py-5 font-[500]">Let&apos;s Get In Touch </h1>
           <div className="w-full pb-7 flex md:flex-row flex-col gap-3 md:gap-12 justify-between">
             <div className="flex p-3 flex-1 gap-3 flex-col">
               <div className="flex text-[20px]  items-center gap-3">
@@ -53,9 +53,9 @@ const Contact = () => {
                 Submit
               </button>
             </div>
-            <div className="flex-1 p-3 flex flex-col">
+            <div className="flex-1 px-3  justify-start flex flex-col">
               <div className="w-full  gap-8 flex flex-col">
-                <div className="flex text-[20px] items-center gap-3">
+                <div className="flex md:-mt-4 text-[20px] items-center gap-3">
                   <hr className="h-[40px] w-[2px] bg-purple-800 " />
                   <h1 className="md:text-5xl text-[35px] text-left md:py-8 py-5">Our Contact</h1>
                 </div>
@@ -65,22 +65,22 @@ const Contact = () => {
                   </div>
 
                   <div className="flex gap-1 justify-between flex-col items-start">
-                    <h1 className="text-2xl font-semibold">Email Address</h1>
-                    <p className="text-[20px] leading-6">abc@xyz.com.au</p>
+                    <h1 className="text-xl font-[400]">Email Address</h1>
+                    <p className="text-[17px] text-gray-700 font-light  leading-6">abc@xyz.com.au</p>
                   </div>
                 </div>
                 <div className="flex h-[60px] gap-3">
                   <div className="w-[60px] flex justify-center items-center h-full p-3 bg-purple-800 rounded-full ">
-                    <AiFillPhone className="text-white text-2xl" />{" "}
+                    <AiFillPhone className="text-white text-xl" />{" "}
                   </div>
                   <div className="flex gap-1 justify-between flex-col items-start">
-                    <h1  className="text-2xl font-semibold">Call Us</h1>
-                    <p className="text-[20px] leading-6">0412345</p>
+                    <h1  className="text-xl font-[400]">Call Us</h1>
+                    <p className="text-[17px] text-gray-700 font-light leading-6">0410546651</p>
                   </div>
                 </div>
                 <div className="flex items-center mt-8 gap-3">
                   <hr className="h-[40px] w-[2px] bg-purple-800 "  />
-                  <h1 className="text-[30px] leading-6">Zionwellness.com.au</h1>
+                  <h1 className="text-[25px] leading-6">Zionwellness.com.au</h1>
                 </div>
               </div>
             </div>

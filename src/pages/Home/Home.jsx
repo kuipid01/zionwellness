@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Slider from "../../components/Slider";
@@ -7,6 +8,9 @@ import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import Contact from "../Contact";
+import { Link } from "react-router-dom";
+import Ndis from "../../components/Ndis";
+import Support from "../../components/Support";
 const Home = () => {
   return (
     <div className="w-full h-full relative">
@@ -26,24 +30,28 @@ const Home = () => {
       >
         <div className="md:px-[90px] px-3 bg-white  w-full  p-[5px] py-14 relative mdw-[80%] mx-auto h-fit md:h-[70vh] gap-[50px] items-center flex md:flex-row flex-col justify-between">
           <div className="w-full md:w-[50%] h-full flex items-center justify-center">
-            <p className="font-[300] flex justify-center items-center h-full w-fit relative text-[20px] md:text-[20px] text-gray-700 text-left">
-              <FaQuoteLeft className="md:text-4xl text-2xl   text-gray-300 absolute top-0 left-0 md:top-0" />
-              <span className="md:p-4  md:text-[17px]">
-                Zion Wellness Services: Promoting well-being and providing
+            <p className="font-[200] flex flex-col  h-full w-fit relative  text-gray-700 text-left">
+              <FaQuoteLeft className="md:text-4xl text-2xl   text-gray-300 absolute -top-6 left-0 md:top-2" />
+              <span className="md:p-4 md:text-[13px] mt-9 text-centre  lg:text-[15px]">
+                Zion Support Services: Promoting well-being and providing
                 comprehensive support to individuals with disabilities. Our
                 dedicated team of professionals, including therapists,
-                counselors, and experts in various disability fields, is
+                counselors, and experts in various disability fields, 
+                
+                <span className="hidden lg:flex"> 
+                is
                 committed to empowering and enhancing the lives of our clients.
                 We strive to address the unique needs of each individual through
                 a range of specialized services.{" "}
-                <span className="hidden md:flex">
                   Let us guide and assist you on your journey to better health
                   and overall wellness.
                 </span>
               </span>
+              <Link to='/contact' >  <button className="px-8 mt-6 w-fit py-3 uppercase font-[600] bg-red-800 text-white">Book an appointment</button></Link>
+             
             </p>
           </div>
-          <div className="h-[400px] w-full md:w-[500px]">
+          <div className="h-[400px] w-full md:w-[50%] ">
             <img
               src="https://img1.wsimg.com/isteam/stock/4433/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280,h:853"
               className="w-full h-full object-cover"
@@ -68,17 +76,17 @@ const Home = () => {
           className="md:px-[50px]    p-[5px] py-14 relative w-full md:w-[80%] mx-auto h-fit  items-center flex flex-col justify-between"
         >
           <h1 className="md:text-4xl text-2xl md:text-left text-center mb-2">
-            How does the Zion Wellness help?
+            How does the Zion Support Sevices help?
           </h1>
           <p className="mb-8 text-center text-gray-700 font-[400]">
             {" "}
-            Zion Wellness helps people with disability to:
+            Zion Support Sevices helps people with disability to:
           </p>
           <div className=" w-full flex md:flex-row flex-col gap-5">
             <div className="flex flex-col gap-2 items-center justify-center ">
               <AiOutlineCheckCircle className="text-6xl text-red-700" />
               <p className="text-center font-[300] md:font-[500] text-gray-900">
-                Zion Wellness Services: Accessing healthcare and education made
+                Zion Support Sevices : Accessing healthcare and education made
                 easy. We assist you in connecting with disability-friendly
                 healthcare providers and inclusive educational opportunities.
                 Our team is here to support your journey towards equal access.
@@ -87,7 +95,7 @@ const Home = () => {
             <div className="flex flex-col gap-2 items-center justify-center ">
               <AiOutlineCheckCircle className="text-6xl text-red-700" />
               <p className="text-center font-[300] md:font-[500] text-gray-900">
-                Zion Wellness Services: Connecting you to inclusive community
+                Zion Support Sevices Services: Connecting you to inclusive community
                 support. Access sports clubs, groups, and charities tailored for
                 individuals with disabilities. Empowering equal opportunities
                 and a strong network.
@@ -96,7 +104,7 @@ const Home = () => {
             <div className="flex flex-col gap-2 items-center justify-center ">
               <AiOutlineCheckCircle className="text-6xl text-red-700" />
               <p className="text-center font-[300] md:font-[500] text-gray-900">
-                Zion Wellness Services: Nurturing informal supports. We offer
+                Zion Support Sevices Services: Nurturing informal supports. We offer
                 resources to help you maintain and enrich the valuable support
                 you receive from family and friends, contributing to your
                 well-being.
@@ -105,7 +113,9 @@ const Home = () => {
           </div>
         </motion.div>
       </div>
-      <WeareHer />
+      <Ndis/>
+      <Support/>
+      {/* <WeareHer /> */}
       {/* onlinebookingsection */}
       {/* <motion.div
         initial={{ opacity: 0.3 }}

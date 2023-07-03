@@ -4,8 +4,10 @@ import {
   AiOutlineArrowRight,
   AiOutlineMail,
 } from "react-icons/ai";
-import { FaCopyright } from "react-icons/fa";
+import { FaCopyright, FaLocationArrow, FaMap } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
+  
   return (
     <div className="w-full z-[999] flex flex-col relative justify-center items-center md:h-fit h-fit ">
       <img
@@ -16,7 +18,9 @@ const Footer = () => {
       <div className="w-full max-h-full bg-red-500 opacity-70 absolute object-cover h-full top-0 left-0 "></div>
       <div className="md:w-[80%] z-[999] w-full px-3 py-20  text-white justify-between gap-9 md:gap-0 flex md:flex-row flex-col mx-auto h-fit ">
         <div className="md:w-[30%] mb-9 w-full">
-          <h1 className="text-4xl text-center mb-3">Logo</h1>
+        <div className={`mx-auto w-[150px] h-[150px]` }>
+          <img src="/assets/2bg.png"  className="w-full h-full  object-contain" alt="" />
+        </div>
           {/* <img src="https://scicarers.com.au/wp-content/uploads/2021/05/sci-care-1024x265.jpg" alt="" /> */}
           <p className="md:text-left leading-[30px] text-center font-[300] md:font-[400] text-[15px]">
             The National Disability Insurance Scheme (NDIS) supports people with
@@ -34,11 +38,23 @@ const Footer = () => {
         <div>
           <h1 className="mb-5">Quick Links</h1>
           <hr className="text-[5px] mb-4" />
-          <ul className="flex flex-col gap-2">
+          <ul className="flex font-light flex-col gap-2">
+            <Link to='/team'>
+           
             <li>Our Team</li>
-            <li> Testimonials</li>
+            </Link>
+            <Link to='/testimonials'>
+            <li > Testimonials</li>
+            </Link>
+            <Link to='/contact'>
             <li>Contact Us</li>
-            <li>About Zion Wellness</li>
+            </Link>
+            <Link to='/about'>
+            <li>About Us</li>
+            </Link>
+            <Link to='/services'>
+            <li>Services</li>
+            </Link>
           </ul>
         </div>
         <div>
@@ -54,9 +70,13 @@ const Footer = () => {
           <hr className="text-[5px] mb-4" />
           <p className="flex  mb-8 items-center gap-3">
             <AiFillPhone />
-            <span> 12345678 </span>
+            <span> 0410546651 </span>
           </p>
-          <div className="w-[300px] relative flex justify-center py-1 items-center bg-white h-[50px]">
+          <p className="flex  mb-8 items-center gap-3">
+            < FaMap />
+            <span> 8/70 Freeman road Durack  4077 </span>
+          </p>
+          {/* <div className="w-[300px] relative flex justify-center py-1 items-center bg-white h-[50px]">
             <input
               type="text"
               className="w-full placeholder:text-[12px] md:placeholder:text-[14px] h-full text-black outline-none pl-3 bg-transparent"
@@ -66,7 +86,7 @@ const Footer = () => {
               {" "}
               <span>Send</span> <AiOutlineArrowRight />{" "}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       
