@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 
 const Slider = () => {
     const [slideValue, setSlideValue] = useState(0)
+    const [reverse, setReverse] = useState(false)
     const images  = [
         'https://plus.unsplash.com/premium_photo-1663134272749-95163ecfff20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80',
           'https://images.unsplash.com/photo-1599817086997-131b19b42f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
@@ -10,32 +11,53 @@ const Slider = () => {
 'https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80']
     let sliderStyle = {
         transform: `translateX(${slideValue}vw)`,
-        transition: 'transform 0.4s ease-in-out',
+        transition: 'transform 0.7s ease-in-out',
+        
         
     }
     const setSlideImage = (index) => {
 setSlideValue(-index*100)
-    }
-    // useEffect(() => {
+    }  
+  
+     useEffect(() => {
 
-    //     setInterval(() => {
-    //         if (slideValue===0) {
+
+        if (slideValue ===-300) {
+         
+            setReverse(true)
+        }
+        if (slideValue ===0) {
+            setReverse(false)
+        }
+
+        if (reverse) {
+            const interval =  setInterval(() => {
+               
+                 setSlideValue(p => p + 100)
                 
-    //             setSlideValue( ( images.length-1 )* -100)
-    //         }
-    // else{
-    //     setSlideValue(slideValue+100)
-    // }
-           
-           
-    //     }, 5000);
+                }, 2000);
+                return () => {
+                    clearInterval(interval)
+                  }
+        }
+        else{
+            const interval =  setInterval(() => {
+               
+                 setSlideValue(p => p - 100)
+                
+                }, 2000);
+
+                return () => {
+                    clearInterval(interval)
+                  }
+        }
+
     
-    //   return () => {
-    //     clearInterval()
-    //   }
-    // }, [])
     
-   
+       
+     }, [slideValue,reverse])
+    
+ 
 
   return (
     <div className='w-full flex relative overflow-hidden h-[80vh] md:h-[85vh]'>

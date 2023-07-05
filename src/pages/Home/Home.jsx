@@ -25,10 +25,14 @@ const Home = () => {
       <motion.div
         initial={{ opacity: 0.1 }}
         whileInView={{ opacity: 1 }}
+        trigger
         transition={{ duration: 0.7 }}
         className="w-screen h-full relative z-20 bg-white "
       >
-        <div className="md:px-[90px] px-3 bg-white  w-full  p-[5px] py-14 relative mdw-[80%] mx-auto h-fit md:h-[70vh] gap-[50px] items-center flex md:flex-row flex-col justify-between">
+        <motion.div
+      
+         animate={{ opacity: 0, y:200 }}
+         transition={{ duration: 0.6, dalay: 0.5 }} className="md:px-[90px] px-3 bg-white  w-full  p-[5px] py-14 relative mdw-[80%] mx-auto h-fit md:h-[70vh] gap-[50px] items-center flex md:flex-row flex-col justify-between">
           <div className="w-full md:w-[50%] h-full flex items-center justify-center">
             <p className="font-[200] flex flex-col  h-full w-fit relative  text-gray-700 text-left">
               <FaQuoteLeft className="md:text-4xl text-2xl   text-gray-300 absolute -top-6 left-0 md:top-2" />
@@ -51,16 +55,20 @@ const Home = () => {
              
             </p>
           </div>
-          <div className="h-[400px] w-full md:w-[50%] ">
+          <motion.div   initial={{ opacity: 0.1 , y:200 }}
+         whileInView={{ opacity: 1, y:0  }}
+         transition={{ duration: 0.7, dalay: 0.9 }} className="h-[400px] w-full md:w-[50%] ">
             <img
               src="https://img1.wsimg.com/isteam/stock/4433/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280,h:853"
               className="w-full h-full object-cover"
               alt=""
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </motion.div>
-      <div className="w-screen py-8 h-full relative z-20 bg-white ">
+      <motion.div   initial={{ opacity: 0.1 , y:200 }}
+         whileInView={{ opacity: 1, y:0  }}
+         transition={{ duration: 0.7, dalay: 0.4 }} className="w-screen py-8 h-full relative z-20 bg-white ">
         <img
           src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdoaXRlJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
           alt=""
@@ -112,7 +120,7 @@ const Home = () => {
             </div>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
       <Ndis/>
       <Support/>
       {/* <WeareHer /> */}
