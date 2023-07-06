@@ -1,85 +1,50 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 
 const Services = () => {
   const [services, setServices] = useState([
+ 
     {
       id: 1,
-      details: "Accommodation/Tenancy Assistance ",
-    },
-    {
-      id: 2,
-      details: "	Assistance to Access and Maintain Employment or Higher Education ",
-    },
-    {
-      id: 3,
-      details: "Assistive Products for Personal Care and Safety ",
-    },
-    {
-      id: 4,
       details: "	Assistance with Daily Personal Activities (High-Intensity)",
     },
+   
     {
-      id: 5,
-      details: "	Personal Mobility Equipment ",
-    },
-    {
-      id: 6,
+      id: 2,
       details: "Assistance with Life Stage Transitions and Support ",
     },
+   
     {
-      id: 7,
-      details: "	Specialised Driver Training ",
-    },
-    {
-      id: 8,
+      id: 3,
       details: "	Assistance with Daily Personal Activities  ",
     },
+   
     {
-      id: 9,
-      details: "	Assistance with Travel and Transport ",
-    },
-    {
-      id: 10,
+      id: 4,
       details: "	Vehicle Modifications ",
     },
+   
     {
-      id: 11,
-      details: "	Assistance Animals  ",
-    },
-    {
-      id: 12,
-      details: "Custom Prosthetics ",
-    },
-    {
-      id: 13,
+      id: 5,
       details: "	Specialist Disability Accommodation (SDA)  ",
     },
     {
-      id: 14,
+      id: 6,
       details: "	NDIS Planning and Plan Management ",
     },
+    
     {
-      id: 15,
-      details: "	Exercise Physiology and Personal Wellbeing Activities  ",
-    },
-    {
-      id: 16,
+      id: 7,
       details: "	Assistance with Household Tasks ",
     },
+  
     {
-      id: 17,
-      details: "Hearing Equipment  ",
-    },
-    {
-      id: 18,
+      id: 8,
       details: "	Development of Daily Living and Life Skills  ",
     },
+   
     {
-      id: 19,
-      details: "	Specialised Driver Training ",
-    },
-    {
-      id: 20,
+      id: 9,
       details: "		Community Nursing Care  ",
     },
    
@@ -121,10 +86,10 @@ const Services = () => {
             {services.map((test, index) => (
               <div
                 key={test.id}
-                className="md:w-[20%] w-full text-xl  flex flex-col justify-center items-center py-3 px-4 items-left  h-fit  bg-white text-gray-700"
+                className="md:w-[20%] w-full text-xl  flex justify-center items-center py-[20px] px-4 items-left  h-fit  bg-white text-gray-700"
               >
-                <small className="text-2xl mb-1"> {index + 1}. </small>
-                <p className=" text-center text-[15px]"> "{test.details}"</p>
+            
+                <p className=" text-center text-[15px]"> &apos;{test.details}&apos;</p>
               </div>
             ))}
           </div>

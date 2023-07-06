@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 import {
   AiFillPhone,
@@ -15,7 +16,7 @@ const Footer = () => {
         alt=""
         className="w-full absolute max-h-full object-cover h-full top-0 left-0 "
       />
-      <div className="w-full max-h-full bg-red-500 opacity-70 absolute object-cover h-full top-0 left-0 "></div>
+      <div className="w-full max-h-full bg-[#A700AE] text-white  opacity-90 absolute object-cover h-full top-0 left-0 "></div>
       <div className="md:w-[80%] z-[999] w-full px-3 py-20  text-white justify-between gap-9 md:gap-0 flex md:flex-row flex-col mx-auto h-fit ">
         <div className="md:w-[30%] mb-9 w-full">
         <div className={`mx-auto w-[150px] h-[150px]` }>
@@ -91,8 +92,8 @@ const Footer = () => {
       </div>
       
       <p className="text-white py-2 relative font-[300] bg-gray-800 w-full  text-[12px] md:text-b[16px] items-center flex mx-auto text-center">
-        Copyright &copy; Devkuipid 2023 | Inspired <br className="flex md:hidden" />{" "}
-        by Major Wellness Center - All Rights Reserved
+        Copyright &copy; Devkuipid 2023 |  Inspired <br className="flex md:hidden" />{" "}
+        by Major Wellness Center - All Rights Reserved  | Image by <a href="https://www.freepik.com/free-photo/portrait-smiley-student-wheelchair_12296566.htm#query=person%20with%20disability&position=8&from_view=search&track=ais">Freepik</a>
       </p>
     </div>
   );

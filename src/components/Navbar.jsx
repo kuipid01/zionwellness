@@ -72,13 +72,13 @@ const Navbar = () => {
   };
   return (
     <div
-      className={`w-full sticky top-0 left-0 z-[9999] transition-all  flex justify-center bg-white  items-center ${
+      className={`w-full sticky top-0 left-0 z-[9999] font-[500] transition-all  flex justify-center bg-[#A700AE] text-white items-center ${
         navShow ? "h-[15vh] " : "h-[20vh] "
       } z-[9999999]`}
     >
       <nav className="w-[80%] flex justify-between h-full items-center">
         <div className={` ${
-        navShow ? "md:w-[100px] w-[100px] h-[100px] md:h-[100px]" : " w-[100px] h-[100px] md:w-[100px] md:h-[100px] "
+        navShow ? "md:w-[100px] w-[100px] h-[70px] md:h-[70px]" : " w-[100px] h-[100px] md:w-[100px] md:h-[100px] "
       }  transition-all  ` }>
           <img src="/assets/2bg.png"  className="w-full h-full object-contain" alt="" />
         </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 <li
                   onClick={() => changeLink(index)}
                   className={`transition-all ${
-                    links.links && "border-b-2 text-red-400 border-red-400"
+                    links.links && "border-b-2 text-[#B20027] border-[#B20027]"
                   } hover:text-red-300 cursor-pointer text-[15px] `}
                   key={links.id}
                 >
@@ -120,10 +120,11 @@ const Navbar = () => {
       {/* ////navmobile */}
       <div
         style={navStyle}
-        className={`w-full md:hidden h-screen left-0 fixed ${
+        className={`w-[70%] md:hidden h-screen right-0 fixed ${
           navMobile ? "top-[15vh]" : "-top-[100vh]"
-        } z-[999999] bg-red-600`}
+        } z-[999999] bg-[#A700AE]`}
       >
+        {/* <img className='absolute top-0 left-0 w-full h-full object-cover' src="1d?ixlib=rb-4.0.3&ixid=Mp&w=387&q=80" alt="" /> */}
         <div className="  w-full px-5 py-7 text-white h-full md:hidden flex flex-col items-center justify-center">
           <ul className="flex flex-col items-end h-full  w-full gap-5 uppercase text-lg font-[400]">
             {navLinks.map((links, index) => (
@@ -131,7 +132,7 @@ const Navbar = () => {
                 <li
                   onClick={() => changeLink(index)}
                   className={`transition-all ${
-                    links.links && "border-b-2 text-white-400 border-red-400"
+                    links.links && "border-b-2 text-white-400 border--[#B20027]"
                   } hover:text-red-300 cursor-pointer `}
                   key={links.id}
                 >
@@ -140,10 +141,7 @@ const Navbar = () => {
               </Link>
             ))}
 
-            <div className="flex text-2xl gap-5 ">
-              <AiOutlineShoppingCart className="cursor-pointer hover:text-red-300" />
-              <BiUser className="cursor-pointer hover:text-red-300" />
-            </div>
+        
           </ul>
         </div>
       </div>
