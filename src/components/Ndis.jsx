@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Ndis = ({type}) => {
   if (type==='choose') {
     return (
-      <div className="px-3  md:px-[75px] w-full h-[85vh] flex md:flex-row flex-col justify-center items-center">
+      <div className="px-3 my-[100px] md:my-[10px]  md:px-[75px] w-full h-[85vh] flex md:flex-row flex-col justify-center items-center">
        <div className="flex-1 flex  justify-center items-center md:flex h-full">
           <img className=" w-[full] h-full pt-[10px] md:w-[80%] md:h-[80%] object-cover" src="https://img.freepik.com/free-photo/team-supporting-invalid-coworker_23-2148476555.jpg?w=1060&t=st=1688411445~exp=1688412045~hmac=c1bc6959666fe549f9447fb0eca78e04a383b776a07577aa8fb35fd9e9139ba5" alt="" />
         </div>
