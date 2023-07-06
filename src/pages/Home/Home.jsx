@@ -56,27 +56,27 @@ const Home = () => {
           </p>
           <div className=" w-full flex md:flex-row flex-col gap-5">
             <div className="flex flex-col gap-2 items-center justify-center ">
-              <AiOutlineCheckCircle className="text-6xl text-[#B20027]" />
+              <AiOutlineCheckCircle className="text-6xl text-[#801645]" />
               <p className="text-center font-[300] md:font-[500] text-gray-900">
-                Zion Support Sevices : Accessing healthcare and education made
+                Access healthcare and education made
                 easy. We assist you in connecting with disability-friendly
                 healthcare providers and inclusive educational opportunities.
                 Our team is here to support your journey towards equal access.
               </p>
             </div>
             <div className="flex flex-col gap-2 items-center justify-center ">
-              <AiOutlineCheckCircle className="text-6xl text-[#B20027]" />
+              <AiOutlineCheckCircle className="text-6xl text-[#801645]" />
               <p className="text-center font-[300] md:font-[500] text-gray-900">
-                Zion Support Sevices Services: Connecting you to inclusive community
+               Connect you to inclusive community
                 support. Access sports clubs, groups, and charities tailored for
                 individuals with disabilities. Empowering equal opportunities
                 and a strong network.
               </p>
             </div>
             <div className="flex flex-col gap-2 items-center justify-center ">
-              <AiOutlineCheckCircle className="text-6xl text-[#B20027]" />
+              <AiOutlineCheckCircle className="text-6xl text-[#801645]" />
               <p className="text-center font-[300] md:font-[500] text-gray-900">
-                Zion Support Sevices Services: Nurturing informal supports. We offer
+               Nurture informal supports. We offer
                 resources to help you maintain and enrich the valuable support
                 you receive from family and friends, contributing to your
                 well-being.
@@ -95,7 +95,7 @@ const Home = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.4 }}
         
-        className="w-full py-8 md:py-[10vh] z-[555] bg-[#B20027] relative flex flex-col gap-8 items-center justify-center h-fit md:h-[35vh] text-white"
+        className="w-full py-8 md:py-[10vh] z-[555] bg-[#801645] relative flex flex-col gap-8 items-center justify-center h-fit md:h-[35vh] text-white"
       >
         <h1 className="font-[800] text-center text-[35px] mt-12 md:text-[55px] ">
           Connect with Booking
@@ -128,7 +128,7 @@ const Home = () => {
                   and overall wellness.
                 </span>
               </span>
-              <Link to='/contact' >  <button className="px-8 mt-6 w-fit py-3 uppercase font-[600] bg-[#A700AE] text-white">Book an appointment</button></Link>
+              <Link to='/contact' >  <button className="px-8 mt-6 w-fit py-3 uppercase font-[600] bg-[#D28F40] text-white">Book an appointment</button></Link>
              
             </p>
           </div>

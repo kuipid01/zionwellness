@@ -72,7 +72,7 @@ setSlideValue(-index*100)
             }
         </div>
 
-<div className='flex h-full w-full opacity-20 left-0 bg-black bottom-0 absolute' >
+<div className='flex h-full w-full opacity-40 left-0 bg-black bottom-0 absolute' >
 
 </div>
 <div className='flex gap-6 left-1/2 -translate-x-1/2 bottom-14 absolute'>
@@ -80,8 +80,8 @@ setSlideValue(-index*100)
 </div>
 <div className='w-full  absolute top-1/2 left-1/2 -translate-y-1/2 text-white flex justify-center text-center
 flex-col -translate-x-1/2'>
-<h1 className='text-[30px] md:text-[50px] md:leading-[100px] font-[900]'>The wholeness care,   you <br className='flex md:hidden' /> deserve</h1>
-<button className='md:w-fit w-[80%] px-[60px] py-4 mx-auto font-bold uppercase bg-[#A700AE] text-white rounded-md'>Learn More</button>
+<h1 className='text-[25px] md:text-[50px] font-[300] md:leading-[100px] md:font-[900]'>The wholeness care,   you <br className='flex md:hidden' /> deserve</h1>
+<button className='md:w-fit w-[80%] px-[60px] py-4 mx-auto font-bold uppercase bg-[#D28F40] text-white rounded-md'>Learn More</button>
 </div>
 
     </div>

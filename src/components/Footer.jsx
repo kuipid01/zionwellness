@@ -5,7 +5,7 @@ import {
   AiOutlineArrowRight,
   AiOutlineMail,
 } from "react-icons/ai";
-import { FaCopyright, FaLocationArrow, FaMap } from "react-icons/fa";
+import { FaCopyright, FaFacebook, FaInstagram, FaLocationArrow, FaMap } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
   
@@ -16,8 +16,8 @@ const Footer = () => {
         alt=""
         className="w-full absolute max-h-full object-cover h-full top-0 left-0 "
       />
-      <div className="w-full max-h-full bg-[#A700AE] text-white  opacity-90 absolute object-cover h-full top-0 left-0 "></div>
-      <div className="md:w-[80%] z-[999] w-full px-3 py-20  text-white justify-between gap-9 md:gap-0 flex md:flex-row flex-col mx-auto h-fit ">
+      <div className="w-full max-h-full bg-[#801645] text-white  absolute object-cover h-full top-0 left-0 "></div>
+      <div className="md:w-[90%] z-[999] w-full px-3 py-20  text-white justify-between gap-9 md:gap-0 flex md:flex-row flex-col mx-auto h-fit ">
         <div className="md:w-[30%] mb-9 w-full">
         <div className={`mx-auto w-[150px] h-[150px]` }>
           <img src="/assets/2bg.png"  className="w-full h-full  object-contain" alt="" />
@@ -37,7 +37,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <h1 className="mb-5">Quick Links</h1>
+          <h1 className="text-xl text-[#D28F40]  mb-5">Quick Links</h1>
           <hr className="text-[5px] mb-4" />
           <ul className="flex font-light flex-col gap-2">
             <Link to='/team'>
@@ -59,15 +59,15 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h1 className="mb-5">Official information</h1>
+          <h1 className="text-xl text-[#D28F40]  mb-5">Official information</h1>
           <hr className="text-[5px] mb-4" />
           <p className="flex  mb-8 items-center gap-3">
             <AiOutlineMail />
-            <span> abc@example.com </span>
+            <span className="text-[#D28F40] "> abc@example.com </span>
           </p>
         </div>
         <div>
-          <h1 className="mb-5">Call Now</h1>
+          <h1 className="text-xl text-[#D28F40]  mb-5">Connect With Us</h1>
           <hr className="text-[5px] mb-4" />
           <p className="flex  mb-8 items-center gap-3">
             <AiFillPhone />
@@ -77,6 +77,9 @@ const Footer = () => {
             < FaMap />
             <span> 8/70 Freeman road Durack  4077 </span>
           </p>
+          <div className="w-fit gap-[3rem] text-4xl pb-[3rem] text-[#D28F40]    mx-auto flex justify-between">
+          <FaFacebook /> <FaInstagram  />
+        </div>
           {/* <div className="w-[300px] relative flex justify-center py-1 items-center bg-white h-[50px]">
             <input
               type="text"

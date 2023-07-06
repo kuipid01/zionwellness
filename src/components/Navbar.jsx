@@ -72,7 +72,7 @@ const Navbar = () => {
   };
   return (
     <div
-      className={`w-full sticky top-0 left-0 z-[9999] font-[500] transition-all  flex justify-center bg-[#A700AE] text-white items-center ${
+      className={`w-full sticky top-0 left-0 z-[9999] font-[500] transition-all  flex justify-center bg-[#801645] text-white items-center ${
         navShow ? "h-[15vh] " : "h-[20vh] "
       } z-[9999999]`}
     >
@@ -85,12 +85,12 @@ const Navbar = () => {
         {navMobile ? (
           <AiOutlineClose
             onClick={() => setNavMobile(false)}
-            className="text-[30px] cursor-pointer hover:text-red-600 transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
+            className="text-[30px] cursor-pointer hover:text-[#D28F40] transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
           />
         ) : (
           <AiOutlineMenu
             onClick={() => setNavMobile(true)}
-            className="text-[30px] cursor-pointer hover:text-red-600 transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
+            className="text-[30px] cursor-pointer hover:text-[#D28F40] transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
           />
         )}
         <div className="hidden  w-fit h-full md:flex items-center justify-center">
@@ -100,7 +100,7 @@ const Navbar = () => {
                 <li
                   onClick={() => changeLink(index)}
                   className={`transition-all ${
-                    links.links && "border-b-2 text-[#B20027] border-[#B20027]"
+                    links.links && "border-b-2 text-[#D28F40] border-[#D28F40]"
                   } hover:text-red-300 cursor-pointer text-[17px] `}
                   key={links.id}
                 >
@@ -122,7 +122,7 @@ const Navbar = () => {
         style={navStyle}
         className={`w-[70%] md:hidden h-screen right-0 fixed ${
           navMobile ? "top-[15vh]" : "-top-[100vh]"
-        } z-[999999] bg-[#A700AE]`}
+        } z-[999999] bg-[#801645]`}
       >
         {/* <img className='absolute top-0 left-0 w-full h-full object-cover' src="1d?ixlib=rb-4.0.3&ixid=Mp&w=387&q=80" alt="" /> */}
         <div className="  w-full px-5 py-7 text-white h-full md:hidden flex flex-col items-center justify-center">
@@ -132,8 +132,8 @@ const Navbar = () => {
                 <li
                   onClick={() => changeLink(index)}
                   className={`transition-all ${
-                    links.links && "border-b-2 text-white-400 border--[#B20027]"
-                  } hover:text-red-300 cursor-pointer `}
+                    links.links && "border-b-2 text-white-400 border--[#D28F40]"
+                  } hover:text-[#D28F40] cursor-pointer `}
                   key={links.id}
                 >
                   {links.name}
