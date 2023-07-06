@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Ndis = ({type}) => {
   if (type==='choose') {
     return (
-      <div className="px-3 my-[100px] md:my-[10px]  md:px-[75px] w-full h-[85vh] flex md:flex-row flex-col justify-center items-center">
+      <div className="px-3 my-[50px] md:my-[10px]  md:px-[75px] h-fit w-full md:h-[85vh] flex md:flex-row flex-col justify-center items-center">
        <div className="flex-1 flex  justify-center items-center md:flex h-full">
-          <img className=" w-[full] h-full pt-[10px] md:w-[80%] md:h-[80%] object-cover" src="https://img.freepik.com/free-photo/team-supporting-invalid-coworker_23-2148476555.jpg?w=1060&t=st=1688411445~exp=1688412045~hmac=c1bc6959666fe549f9447fb0eca78e04a383b776a07577aa8fb35fd9e9139ba5" alt="" />
+          <img className=" w-[full] h-full pt-[10px] md:w-[80%] md:h-[80%] object-cover" src="https://plus.unsplash.com/premium_photo-1680807869239-a22d00d378f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80" alt="" />
         </div>
         <div className="flex md:px-3 flex-1 flex-col gap-8">
           <h1 className="font-[200] text-[25px] md:text-2xl md:font-[500]  text-gray-800 leading-10">Who Choose Us? </h1>
@@ -41,7 +41,7 @@ We tailor the supports to suit each client’s individual needs and focus on the
           </Link>
 </div>
 <div className="flex-1 flex  justify-center items-center md:flex h-full">
-          <img className=" w-[full] h-full pt-[10px] md:w-[80%] md:h-[80%] object-cover" src="https://img.freepik.com/free-photo/team-supporting-invalid-coworker_23-2148476555.jpg?w=1060&t=st=1688411445~exp=1688412045~hmac=c1bc6959666fe549f9447fb0eca78e04a383b776a07577aa8fb35fd9e9139ba5" alt="" />
+          <img className=" w-[full] h-full pt-[10px] md:w-[80%] md:h-[80%] object-cover" src="https://plus.unsplash.com/premium_photo-1661774698683-ac91910928fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwZGlzYWJsZWQlMjBnaXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="" />
         </div>
       </div>
     );
