@@ -11,8 +11,7 @@ const Ndis = ({type}) => {
         <div className="flex md:px-3 flex-1 flex-col gap-8">
           <h1 className="font-[200] text-[25px] md:text-2xl md:font-[500]  text-gray-800 leading-10">Who Choose Us? </h1>
           <p className="text-[17px] font-[200] leading-[30px] ">
-          We provide personal and professional services that improve the quality of life of people with disabilities by enhancing independence and facilitating social and community participation.  We strive to involve family members, loved ones and carers on the journey to ensure that our services take into consideration, every aspect of a person’s daily life.  For every member of our team, having appreciation for each person’s uniqueness makes for truly rewarding work..{" "}
-          </p>
+          Our organization offers personalized and expert assistance to enhance the well-being of individuals with disabilities, empowering them to lead more independent lives and actively engage in their communities. We place great emphasis on involving family members, loved ones, and caregivers throughout the entire process to ensure that our services encompass all aspects of a person's daily life. Valuing the distinctive qualities of each individual is at the core of our team's commitment, making our work truly fulfilling.  </p>
           <Link className="mb-[50px]" to='/about'>
           <button className="w-full  hover:-translate-y-[5px] rounded-[5px]  py-3  bg-[#A700AE] text-white   font-[200]">About Us</button>
         
@@ -28,12 +27,7 @@ const Ndis = ({type}) => {
        
         <div className="flex md:px-3 flex-1 flex-col gap-8">
           <h1 className="font-[200] text-[25px] md:text-2xl md:font-[500] text-gray-800 leading-10">Disability Support and Care Services </h1>
-          <p className="text-[17px] font-[200] leading-[30px] ">
-
-Here at Zion support services we support a wide range of people with their daily intellectual and physical challenges. We provide friendly, high quality supports that are respectful, flexible, affordable and accessible, to people from all age groups and cultural backgrounds.
-
-We tailor the supports to suit each client’s individual needs and focus on the services that add the greatest value to their lives, assisting them to achieve personal goals. Our genuine heart for our staff and clients 
-{" "}
+          <p className="text-[17px] font-[200] leading-[30px] ">Zion Support Services provides high-quality, personalized support for individuals with diverse challenges. Our services are respectful, flexible, affordable, and accessible to people of all backgrounds. We tailor our support to meet individual needs and help clients achieve personal goals. Our genuine care extends to both our staff and clients.{" "}
           </p>
           <Link to='/about'>
           <button className="w-full mb-[100px] hover:-translate-y-[5px] rounded-[5px]  py-3  bg-[#A700AE] text-white   font-[200]">About Us</button>
