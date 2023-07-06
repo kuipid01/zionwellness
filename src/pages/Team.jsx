@@ -10,14 +10,14 @@ const Team = () => {
       />
       <div className="w-full h-full fixed bg-black opacity-50 z-[555] top-0 left-0 object-cover "></div>
       <div className="h-fit z-[999] font-bold w-full py-32 md:py-52 bg-transparent">
-        <h1 className="text-6xl text-red-600 text-center">The Team</h1>
+        <h1 className="text-6xl text-[#801645] text-center">The Team</h1>
       </div>
       <div className="w-full bg-white px-2 md:px-12 z-[888] h-full py-[40px] md:py-32">
         <div className="flex flex-col px-2 md:px-[60px] gap-4 ">
-            <h1 className="text-center text-purple-800 text-5xl mb-2"> 
+            <h1 className="text-center text-[#D28F40] text-2xl md:text-5xl mb-2"> 
                 Team Members
             </h1>
-            <hr className="w-[200px] mb-[100px] mx-auto h-[3px] rounded-full bg-red-600" />
+            <hr className="md:w-[200px] w-[100px] mb-[100px] mx-auto h-[3px] rounded-full bg-[#801645]" />
           <div className="w-fit items-center justify-center">
             <div className="md:w-[500px] w-full h-[300px] md:h-[500px] bg-white shadow-2xl shadow-gray-600">
               <img src="" alt="" />
@@ -29,7 +29,7 @@ const Team = () => {
               quos inventore laborum eaque exercitationem odit minima? Quam
               eligendi numquam at.
             </p>
-            <div className="w-[40px] p-1 h-[40px] flex justify-center items-center mx-auto bg-purple-700 rounded-full">
+            <div className="w-[40px] p-1 h-[40px] flex justify-center items-center mx-auto bg-[#D28F40]  rounded-full">
             <AiOutlineMail className="mx-auto outline-black text-white text-center" />
             </div>
          

@@ -88,7 +88,7 @@ const setRight  = () => {
         src="https://plus.unsplash.com/premium_photo-1682437271487-372d22ec7548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVvcGxlJTIwc2hha2luZyUyMGhhbmRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
       />
  <div className="h-fit z-[999] font-bold w-full py-32 md:py-52 bg-transparent">
-        <h1 className="md:text-6xl text-2xl text-red-600 text-center">Testimonials</h1>
+        <h1 className="md:text-6xl text-2xl text-[#801645] text-center">Testimonials</h1>
       </div>
       <div className="relative flex justify-center pr-5 sm:pr-0 items-center  bg-gray-100 w-full h-[70vh]">
 <div style={widthStyle} className=" flex p-3  overflow-hidden h-full  mx-auto">
@@ -99,7 +99,7 @@ const setRight  = () => {
       <p className="text-left"> "{test.details}"</p>
       <div className="flex flex-col">
         {" "}
-        <small className="font-[400] text-[17px] text-purple-800">{test.name}</small>{" "}
+        <small className="font-[400] text-[17px] text-[#D28F40] ">{test.name}</small>{" "}
         <small className="font-[300] text-xs"> {test.title}</small>
       </div>
     </div>
@@ -107,8 +107,8 @@ const setRight  = () => {
   ))}
 </div>
 </div>
-<AiOutlineArrowLeft onClick={setLeft} className="text-xl cursor-pointer absolute top-1/2 -translate-y-1/2 left-4 md:left-[150px] "/>
-<AiOutlineArrowRight onClick={setRight} className="text-xl cursor-pointer absolute top-1/2 -translate-y-1/2  right-4  md:right-[150px] "/>
+<AiOutlineArrowLeft onClick={setLeft} className="text-xl cursor-pointer absolute top-1/2 -translate-y-1/2 text-[#D28F40]   left-4 md:left-[150px] "/>
+<AiOutlineArrowRight onClick={setRight} className="text-xl cursor-pointer absolute top-1/2 text-[#D28F40]  -translate-y-1/2  right-4  md:right-[150px] "/>
       </div>
      
           
