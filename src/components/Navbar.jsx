@@ -85,12 +85,12 @@ const Navbar = () => {
         {navMobile ? (
           <AiOutlineClose
             onClick={() => setNavMobile(false)}
-            className="text-[25px] cursor-pointer hover:text-red-600 transition-all hover:text-[27px] md:hidden  font-[900] text-gray-500"
+            className="text-[30px] cursor-pointer hover:text-red-600 transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
           />
         ) : (
           <AiOutlineMenu
             onClick={() => setNavMobile(true)}
-            className="text-[25px] cursor-pointer hover:text-red-600 transition-all hover:text-[27px] md:hidden  font-[900] text-gray-500"
+            className="text-[30px] cursor-pointer hover:text-red-600 transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
           />
         )}
         <div className="hidden  w-fit h-full md:flex items-center justify-center">
@@ -101,7 +101,7 @@ const Navbar = () => {
                   onClick={() => changeLink(index)}
                   className={`transition-all ${
                     links.links && "border-b-2 text-[#B20027] border-[#B20027]"
-                  } hover:text-red-300 cursor-pointer text-[15px] `}
+                  } hover:text-red-300 cursor-pointer text-[17px] `}
                   key={links.id}
                 >
                   {links.name}
