@@ -83,15 +83,19 @@ const Navbar = () => {
           <img src="/assets/2bg.png"  className="w-full h-full object-contain" alt="" />
         </div>
         {navMobile ? (
+           <div className="w-fit h-fit p-2 rounded-full bg-[#D28F40]">
           <AiOutlineClose
             onClick={() => setNavMobile(false)}
             className="text-[30px] cursor-pointer hover:text-[#D28F40] transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
-          />
+          /> </div>
         ) : (
-          <AiOutlineMenu
+          <div className="w-fit h-fit p-2 rounded-full bg-[#D28F40]">
+ <AiOutlineMenu
             onClick={() => setNavMobile(true)}
-            className="text-[30px] cursor-pointer hover:text-[#D28F40] transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
+            className="text-[25px] cursor-pointer  hover:text-[#D28F40] transition-all md:hidden  font-[500] text-white"
           />
+          </div>
+         
         )}
         <div className="hidden  w-fit h-full md:flex items-center justify-center">
           <ul className="flex h-full  items-center gap-5 uppercase text-lg font-[400]">
