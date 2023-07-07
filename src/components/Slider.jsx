@@ -22,43 +22,10 @@ const Slider = () => {
 setSlideValue(-index*100)
     }  
   
-    //  useEffect(() => {
-
-
-    //     if (slideValue ===-300) {
-         
-    //         setReverse(true)
-    //     }
-    //     if (slideValue ===0) {
-    //         setReverse(false)
-    //     }
-
-    //     if (reverse) {
-    //         const interval =  setInterval(() => {
-               
-    //              setSlideValue(p => p + 100)
-                
-    //             }, 2000);
-    //             return () => {
-    //                 clearInterval(interval)
-    //               }
-    //     }
-    //     else{
-    //         const interval =  setInterval(() => {
-               
-    //              setSlideValue(p => p - 100)
-                
-    //             }, 2000);
-
-    //             return () => {
-    //                 clearInterval(interval)
-    //               }
-    //     }
-
     
-    
-       
-    //  }, [slideValue,reverse])
+    let textStyle  = {
+        fontFamily :' Great Vibes, cursive',
+      }
     
  
 
@@ -80,7 +47,7 @@ setSlideValue(-index*100)
 </div>
 <div className='w-full  absolute top-1/2 left-1/2 -translate-y-1/2 text-white flex justify-center text-center
 flex-col -translate-x-1/2'>
-<h1 className='text-[25px] md:text-[50px] font-[300] md:leading-[100px] md:font-[900]'>The wholesome care,   you <br className='flex md:hidden' /> deserve</h1>
+<h1 style={textStyle}  className='text-[38px] tracking-wider leading-[50px] md:text-[50px] font-[300] md:leading-[100px] md:font-[900]'>The wholesome care,   you <br className='flex md:hidden' /> deserve</h1>
 <button className='md:w-fit w-[80%] px-[60px] py-4 mx-auto font-bold uppercase bg-[#D28F40] text-white rounded-md'>Learn More</button>
 </div>
 
