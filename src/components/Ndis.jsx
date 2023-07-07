@@ -9,7 +9,7 @@ const Ndis = ({type}) => {
           <img className=" w-[full] h-full pt-[10px] md:w-[80%] md:h-[80%] object-cover" src="https://plus.unsplash.com/premium_photo-1680807869239-a22d00d378f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80" alt="" />
         </div>
         <div className="flex md:px-3 flex-1 flex-col  gap-1">
-          <h1 className="font-[700] text-[25px] md:text-2xl md:font-[500]  text-gray-800 leading-10">Who Choose Us? </h1>
+          <h1 className="font-[700] text-[25px] md:text-2xl md:font-[500]  text-gray-800 leading-10">Why Choose Us? </h1>
           <p className="text-[17px] font-[200] leading-[30px] ">
           Our organization offers personalized and expert assistance to enhance the well-being of individuals with disabilities, empowering them to lead more independent lives and actively engage in their communities. We place great emphasis on involving family members, loved ones, and caregivers throughout the entire process to ensure that our services encompass all aspects of a person's daily life. Valuing the distinctive qualities of each individual is at the core of our team's commitment, making our work truly fulfilling.  </p>
           <Link className="mb-[50px]" to='/about'>
