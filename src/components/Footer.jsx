@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="md:w-[90%] z-[999] w-full px-3 py-20  text-white justify-between gap-9 md:gap-0 flex md:flex-row flex-col mx-auto h-fit ">
         <div className="md:w-[30%] mb-9 w-full">
         <div className={`mx-auto w-[150px] h-[150px]` }>
-          <img src="/assets/2bg.png"  className="w-full h-full  object-contain" alt="" />
+          <img src="/assets/singleLogo.png"  className="w-full h-full  object-contain" alt="" />
         </div>
           {/* <img src="https://scicarers.com.au/wp-content/uploads/2021/05/sci-care-1024x265.jpg" alt="" /> */}
           <p className="md:text-left leading-[30px] text-center font-[300] md:font-[400] text-[15px]">

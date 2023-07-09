@@ -90,13 +90,13 @@ const Navbar = () => {
         <span className='text-gray-100 md:hidden text-[20px] font-[400]'>Zion Support Services</span>
         </div>
         {navMobile ? (
-           <div className="w-fit h-fit p-2 rounded-full bg-[#D28F40]">
+           <div className="w-fit h-fit p-2 mr-2 rounded-full bg-[#D28F40]">
           <AiOutlineClose
             onClick={() => setNavMobile(false)}
             className="text-[30px] cursor-pointer hover:text-[#D28F40] transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
           /> </div>
         ) : (
-          <div className="w-fit h-fit p-2 flex md:hidden   rounded-full bg-[#D28F40]">
+          <div className="w-fit h-fit p-2 flex md:hidden mr-2  rounded-full bg-[#D28F40]">
  <AiOutlineMenu
             onClick={() => setNavMobile(true)}
             className="text-[25px] cursor-pointer  hover:text-[#D28F40] transition-all  font-[500] text-white"
