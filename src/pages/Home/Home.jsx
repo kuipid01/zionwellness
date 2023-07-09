@@ -95,13 +95,15 @@ const Home = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.4 }}
         
-        className="w-full py-8 md:py-[10vh] z-[555] bg-[#801645] relative flex flex-col gap-8 items-center justify-center h-fit md:h-[35vh] text-white"
+        className="w-full py-3 md:py-[10vh] z-[555] bg-[#801645] relative flex flex-col gap-8 items-center justify-center h-fit md:h-[35vh] text-white"
       >
-        <h1 className="font-[800] text-center text-[35px] mt-12 md:text-[55px] ">
+        <h1 className="font-[800] text-center text-[20px] md:mt-12 md:text-[55px] ">
           Connect with Booking
         </h1>
-        <div className="w-fit gap-[3rem] text-4xl pb-[3rem] mx-auto flex justify-between">
-          <FaFacebook /> <FaInstagram />
+        <div className="w-fit gap-[3rem] text-xl md:text-4xl md:pb-[3rem] mx-auto flex justify-between">
+         <a target="blank"  href="htttp://www.facebook.com/profile.php?id=100094282963144&mibextid=LQQJ4d"><FaFacebook /></a>  
+         <a target="blank" href="htttp://instagram.com/zionsupportservices?igshid=MzRIODBiNWFIZA==">     <FaInstagram /></a>
+
         </div>
       </motion.div> 
       <motion.div

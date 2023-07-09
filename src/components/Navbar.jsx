@@ -76,11 +76,18 @@ const Navbar = () => {
         navShow ? "h-[15vh] " : "h-[20vh] "
       } z-[9999999]`}
     >
-      <nav className="w-[80%] flex justify-between h-full items-center">
-        <div className={` ${
-        navShow ? "md:w-[100px] w-[100px] h-[70px] md:h-[70px]" : " w-[100px] h-[100px] md:w-[100px] md:h-[100px] "
+      <nav className="w-[97%] md:w-[80%] flex justify-between h-full items-center">
+        <div className="flex h-full items-center">
+
+        
+        <div className={` flex ${
+        navShow ? "md:w-[80px] w-[60px] h-[50px] md:h-[60px]" : " w-[80px] h-[80px] md:w-[100px] md:h-[100px] "
       }  transition-all  ` }>
-          <img src="/assets/2bg.png"  className="w-full h-full object-contain" alt="" />
+         <img src="/assets/singleLogo.png"  className="w-full  md:hidden h-full object-contain" alt="" />
+       
+          <img src="/assets/ZionFire.png"  className="w-full hidden md:flex h-full object-contain" alt="" />
+        </div>
+        <span className='text-gray-100 md:hidden text-[20px] font-[400]'>Zion Support Services</span>
         </div>
         {navMobile ? (
            <div className="w-fit h-fit p-2 rounded-full bg-[#D28F40]">
@@ -89,10 +96,10 @@ const Navbar = () => {
             className="text-[30px] cursor-pointer hover:text-[#D28F40] transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
           /> </div>
         ) : (
-          <div className="w-fit h-fit p-2 rounded-full bg-[#D28F40]">
+          <div className="w-fit h-fit p-2 flex md:hidden   rounded-full bg-[#D28F40]">
  <AiOutlineMenu
             onClick={() => setNavMobile(true)}
-            className="text-[25px] cursor-pointer  hover:text-[#D28F40] transition-all md:hidden  font-[500] text-white"
+            className="text-[25px] cursor-pointer  hover:text-[#D28F40] transition-all  font-[500] text-white"
           />
           </div>
          
