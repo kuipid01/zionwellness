@@ -101,8 +101,8 @@ const Home = () => {
           Connect with Booking
         </h1>
         <div className="w-fit gap-[3rem] text-xl md:text-4xl md:pb-[3rem] mx-auto flex justify-between">
-         <a target="blank"  href="htttp://www.facebook.com/profile.php?id=100094282963144&mibextid=LQQJ4d"><FaFacebook /></a>  
-         <a target="blank" href="htttp://instagram.com/zionsupportservices?igshid=MzRIODBiNWFIZA==">     <FaInstagram /></a>
+         <a target="blank"  href="https://www.facebook.com/profile.php?id=100094282963144&mibextid=LQQJ4d"><FaFacebook /></a>  
+         <a target="blank" href="https://instagram.com/zionsupportservices?igshid=MzRlODBiNWFlZA==">     <FaInstagram /></a>
 
         </div>
       </motion.div> 
