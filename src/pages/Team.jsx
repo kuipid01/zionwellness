@@ -1,9 +1,14 @@
-import React from "react";
+import  { useEffect, useRef } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 
 const Team = () => {
+  const scrollToTopRef = useRef(null);
+
+  useEffect(() => {
+    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+  });
   return (
-    <div className=" flex flex-col justify-center relative items-center w-full h-full ">
+    <div ref={scrollToTopRef} className=" flex flex-col justify-center relative items-center w-full h-full ">
       <img
         className="w-full h-full fixed  top-0 left-0 object-cover "
         src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"

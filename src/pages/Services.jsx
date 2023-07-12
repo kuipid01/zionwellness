@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
 
+import React, { useEffect,useState, useRef } from "react";
 const Services = () => {
   const [services, setServices] = useState([
     {
@@ -47,8 +47,14 @@ const Services = () => {
       details: "		Community Nursing Care  ",
     },
   ]);
+  const scrollToTopRef = useRef(null);
+
+  useEffect(() => {
+    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+  });
+
   return (
-    <div className=" flex flex-col justify-center relative items-center w-full h-full ">
+    <div  ref={scrollToTopRef}  className=" flex flex-col justify-center relative items-center w-full h-full ">
       <img
         className="w-full h-full fixed  top-0 left-0 object-cover "
         src="https://plus.unsplash.com/premium_photo-1682437271487-372d22ec7548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVvcGxlJTIwc2hha2luZyUyMGhhbmRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"

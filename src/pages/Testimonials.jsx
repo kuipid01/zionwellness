@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable no-unused-vars */
+import  { useEffect,useState, useRef } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 // Import Swiper styles
@@ -57,7 +58,12 @@ const Testimonials = () => {
     width:`${divWidth}px`,
    
   }
-  
+  const scrollToTopRef = useRef(null);
+
+  useEffect(() => {
+    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+  },[]);
+
 const setLeft  = () => {
 if (sliderPosition===0) {
         
@@ -82,7 +88,7 @@ const setRight  = () => {
     }
   
   return (
-    <div className=" flex flex-col justify-center relative items-center w-full h-full ">
+    <div ref={scrollToTopRef}  className=" flex flex-col justify-center relative items-center w-full h-full ">
       <img
         className="w-full h-full fixed  top-0 left-0 object-cover "
         src="https://plus.unsplash.com/premium_photo-1682437271487-372d22ec7548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVvcGxlJTIwc2hha2luZyUyMGhhbmRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
@@ -96,7 +102,7 @@ const setRight  = () => {
 {testimonials.map((test) => (
     
     <div key={test.id} className="w-[350px]  flex flex-col py-4 px-4 items-left h-[350px] bg-gray-200 text-gray-700">
-      <p className="text-left"> "{test.details}"</p>
+      <p className="text-left"> &quot;{test.details}&quot;</p>
       <div className="flex flex-col">
         {" "}
         <small className="font-[400] text-[17px] text-[#D28F40] ">{test.name}</small>{" "}

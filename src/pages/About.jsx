@@ -1,11 +1,16 @@
+import React, { useEffect, useRef } from "react";
 const About = () => {
   let textStyle  = {
     fontFamily :' Great Vibes, cursive',
   }
+  const scrollToTopRef = useRef(null);
 
+  useEffect(() => {
+    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+  });
   return (
    
-    <div className=" flex flex-col justify-center relative items-center w-full h-full ">
+    <div ref={scrollToTopRef} className=" flex flex-col justify-center relative items-center w-full h-full ">
       <img
         className="w-full h-full fixed  top-0 left-0  object-contain object-center md:object-cover "
         src="https://img.freepik.com/free-photo/about-us-information-service-sharing-join-concept_53876-124056.jpg?t=st=1688601828~exp=1688602428~hmac=8039ddecce0126065754c6f299fa5a7436182c5b8e4e698a4b50a15ef2315d4a"

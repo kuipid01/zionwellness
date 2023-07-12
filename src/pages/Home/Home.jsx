@@ -15,8 +15,8 @@ const Home = () => {
   const scrollToTopRef = useRef(null);
 
   useEffect(() => {
-    scrollToTopRef.current.scrollTo(0, 0); // Scrolls to the top of the page
-  }, []);
+    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+  });
 
   return (
     <div ref={scrollToTopRef} className="w-full h-full relative">
