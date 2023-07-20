@@ -87,7 +87,7 @@ const Navbar = () => {
        
           <img src="/assets/ZionFire.png"  className="w-full hidden md:flex h-full object-contain" alt="" />
         </div>
-        <span className='text-gray-100 md:hidden text-[20px] font-[400]'>Zion Support Services</span>
+        <span className='text-gray-100 md:hidden text-[20px] font-[600]'>Zion Support Services</span>
         </div>
         {navMobile ? (
            <div className="w-fit h-fit p-2 mr-2 rounded-full bg-[#D28F40]">

@@ -11,9 +11,8 @@ const Team = () => {
     <div ref={scrollToTopRef} className=" flex flex-col justify-center relative items-center w-full h-full ">
       <img
         className="w-full h-full fixed  top-0 left-0 object-cover "
-        src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-      />
-      <div className="w-full h-full fixed bg-black opacity-50 z-[555] top-0 left-0 object-cover "></div>
+        src="/assets/disabled5.jpg"  />
+      <div className="w-full h-full fixed bg-black opacity-60 z-[555] top-0 left-0 object-cover "></div>
       <div className="h-fit z-[999] font-bold w-full py-32 md:py-52 bg-transparent">
         <h1 className="text-6xl text-[#801645] text-center">The Team</h1>
       </div>

@@ -90,9 +90,8 @@ const setRight  = () => {
   return (
     <div ref={scrollToTopRef}  className=" flex flex-col justify-center relative items-center w-full h-full ">
       <img
-        className="w-full h-full fixed  top-0 left-0 object-cover "
-        src="https://plus.unsplash.com/premium_photo-1682437271487-372d22ec7548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVvcGxlJTIwc2hha2luZyUyMGhhbmRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
-      />
+        className="w-full h-full fixed  top-0 left-0 object-top object-cover "
+        src="/assets/disabled1.jpg"    />
  <div className="h-fit z-[999] font-bold w-full py-32 md:py-52 bg-transparent">
         <h1 className="md:text-6xl text-2xl text-[#801645] text-center">Testimonials</h1>
       </div>
