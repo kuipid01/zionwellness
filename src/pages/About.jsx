@@ -21,7 +21,7 @@ const About = () => {
         <h1 className="text-6xl text-red-600 text-center"> About Us </h1>
       </div>
       <div className="w-full bg-white px-2 md:px-12  z-[888] h-full py-[40px] md:py-32">
-        <p style={textStyle} className="w-full font-light text-gray-600 md:w-[900px] md:text-lg leading-7 md:leading-8 ">
+        <p style={textStyle} className="w-full px-[5px] font-light text-gray-600 md:w-[900px] md:text-lg leading-7 md:leading-8 ">
           At Zion Support Services we provide a range of disability services.
           With the range of services, we provide, we aim to make a difference in
           the lives of those with disability. The goal is to make each of our
@@ -38,11 +38,11 @@ const About = () => {
           Values Statement Our values are centred around our staff, participants
           and their families or guardians. <br />
           <p className="mt-3 text-black text-xl ">
-            Respect- <span style={textStyle} className=" md:text-[20px] text-sm font-[100] text-gray-600  md:tracking-wider leading-[35px]" >We respect people’s decisions, opinions and views.</span>  <br />
+            Respect- <span style={textStyle} className=" md:text-[20px] text-sm font-[300] text-gray-600  md:tracking-wider leading-[35px]" >We respect people’s decisions, opinions and views.</span>  <br />
           </p>
           <br />
           <p>
-            <span className="text-black text-xl">Honesty </span>  <span style={textStyle} className=" md:text-[20px] text-sm font-[100] text-gray-600  md:tracking-wider leading-[35px]" >-We are
+            <span className="text-black text-xl">Honesty </span>  <span style={textStyle} className=" md:text-[20px] text-sm font-[300] text-gray-600  md:tracking-wider leading-[35px]" >-We are
             trustworthy and tell the truth to keep our promise to you. </span> 
           </p>
           <br />
@@ -50,7 +50,7 @@ const About = () => {
             <span className="text-black text-xl">
               {" "}
               Privacy and Confidentiality{" "}
-            </span>{" "} <span style={textStyle} className=" md:text-[20px] text-sm font-[100] text-gray-600  md:tracking-wider leading-[35px]" >
+            </span>{" "} <span style={textStyle} className=" md:text-[20px] text-sm font-[300] text-gray-600  md:tracking-wider leading-[35px]" >
             -This is of utmost importance as outlined in our Privacy and
             Confidentiality Policy and Procedure.
             </span>
@@ -60,7 +60,7 @@ const About = () => {
             <span className="text-black text-xl">
               {" "}
               Development and Improvement{" "}
-            </span>{" "}  <span style={textStyle} className=" md:text-[20px] text-sm md: font-[100] text-gray- md:600 tracking-wider leading-[35px]" >
+            </span>{" "}  <span style={textStyle} className=" md:text-[20px] text-sm md: font-[300] text-gray- md:600 tracking-wider leading-[35px]" >
             - We will identify, with your help, where we can develop projects.
             We always work to improve our services and to uphold the Service
             Standards. Your feedback is always valued. </span>
@@ -70,19 +70,19 @@ const About = () => {
             <span className="text-black text-xl">
               {" "}
               Safe and Harmonious working environment
-            </span>{" "} <span style={textStyle} className=" md:text-[20px] text-sm font-[100] text-gray-600  md:600 tracking-wider leading-[35px]" >
+            </span>{" "} <span style={textStyle} className=" md:text-[20px] text-sm font-[300] text-gray-600  md:600 tracking-wider leading-[35px]" >
             -We offer a workplace that provides support, guidance and acceptance
             to staff and participants. </span>
           </p>{" "}
           <br />
           <p>
-            <span className="text-black text-xl">Passion </span> - <span style={textStyle} className=" md:text-[20px] text-sm font-[100] text-gray-600  md:tracking-wider leading-[35px]" >We have a
+            <span className="text-black text-xl">Passion </span> - <span style={textStyle} className=" md:text-[20px] text-sm font-[300] text-gray-600  md:tracking-wider leading-[35px]" >We have a
             passion to our work ethics. Every member of staff is passionate
             about his work and takes the participant as part of the family.{" "}</span>
           </p>
           <br />
          
-          <div className="w-fit my-[40px]  p-5 mx-auto border border-gray-300 rounded-[4px]">
+          <div className="w-fit my-[40px] p-3  md:p-5 mx-auto border border-gray-300 rounded-[4px]">
           <h1 className="md:text-xl text-center text-black mb-3 text-lg">
             Vision Statement
           </h1>
