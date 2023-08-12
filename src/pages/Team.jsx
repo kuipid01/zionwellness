@@ -38,7 +38,7 @@ const Team = () => {
     {
       id: 3,
       name: "Damilola Akefe",
-      position: "Chief operating officr",
+      position: "Chief operating officer",
       text: "Introducing Damilola Akefe, the dynamic Chief Operational Officer at Zion Disability Services. With her exceptional operational acumen, Damilola orchestrates seamless experiences for individuals with disabilities. Her passion for enhancing lives shines through her strategic leadership, ensuring that Zion remains a beacon of excellence in the disability service sector. With a keen eye for detail and a heart for empowerment, Damilola's dedication drives the mission of creating a more inclusive and vibrant community",
       whatsapp: "",
       twitter: "",
