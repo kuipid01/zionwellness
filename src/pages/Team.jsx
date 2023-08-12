@@ -94,7 +94,7 @@ const Team = () => {
             <h1 className="md:text-[70px] text-[40px] ">
               {teamMembers[toBedisplayed].name}
             </h1>
-            <p className="md:text-[25px] text-[15px] mb-[1rem] text-gray-800">
+            <p className="md:text-[25px] capitalize text-[15px] mb-[1rem] text-gray-800">
               {teamMembers[toBedisplayed].position}
             </p>
             <p className="text-[15px] leading-[24px] tracking-wide mb-[1rem] ">
