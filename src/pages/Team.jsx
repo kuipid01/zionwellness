@@ -25,9 +25,9 @@ const Team = () => {
     },
     {
       id: 2,
-      name: "Placeholder",
-      position: "Placeholder",
-      text: "Placeholder",
+      name: "Damilola Akefe",
+      position: "General logistics",
+      text: "",
       whatsapp: "",
       twitter: "",
       instagram: "",
@@ -45,7 +45,7 @@ const Team = () => {
 
     setteamMembers(newArray);
   };
-  console.log(teamMembers);
+
   return (
     <div ref={scrollToTopRef} className="w-full">
       <div className="imageContainer w-full h-fit md:h-[120vh]">
