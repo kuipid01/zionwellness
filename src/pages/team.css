@@ -1,0 +1,29 @@
+/* YourComponent.css */
+.animate-enter {
+    opacity: 0;
+    transform: translateY(-20px); /* Initial position for fadeInDown */
+  }
+  
+  .animate-enter-active {
+    opacity: 1;
+    transform: translateY(0); /* Final position for fadeInDown */
+    transition: opacity 1000ms, transform 1000ms;
+  }
+  
+  .animate-exit {
+    opacity: 1;
+    transform: translateY(0); /* Final position for fadeInDown */
+  }
+  
+  .animate-exit-active {
+    opacity: 0;
+    transform: translateY(-20px); /* Initial position for fadeInDown */
+    transition: opacity 1000ms, transform 1000ms;
+  }
+  
+  /* Additional styles for your component */
+  .your-component {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
