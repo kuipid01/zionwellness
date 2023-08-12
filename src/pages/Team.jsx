@@ -1,42 +1,98 @@
-import  { useEffect, useRef } from "react";
+/* eslint-disable no-unused-vars */
+import { useEffect, useRef, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
+import { FaInstagram, FaTwitter, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 const Team = () => {
-  const scrollToTopRef = useRef(null);
+   const scrollToTopRef = useRef(null);
 
-  useEffect(() => {
-    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
-  });
+   useEffect(() => {
+     scrollToTopRef.current.scrollIntoView({ behaviour: "smooth" });
+   });
+const [toBedisplayed, setToBedisplayed] = useState(0)
+  const [teamMembers, setteamMembers] = useState([
+{
+  id:1,
+  name:"Isaac Akefe",
+  position:"Ceo, Managing Director",
+  text:"Welcome to Zion Disability Service, where our mission is driven by compassion and responsibility. As the CEO, I take great pride in leading our dedicated team that strives to empower individuals with disabilities. At Zion, we believe in fostering a sense of community and independence. Our commitment goes beyond services – we’re here to understand and support each individual’s unique journey. By exploring our comprehensive offerings and impactful stories, you’ll see that we’re more than service providers; we’re your partners on the path to a more inclusive and fulfilling life. Thank you for considering Zion Disability Service as your trusted choice. Warm regards",
+  whatsapp:"",
+  twitter:"",
+  instagram:"",
+  imgageUrl:"/assets/ceo.png",
+  active:true,
+},
+{
+  id:2,
+  name:"Placeholder",
+  position:"Placeholder",
+  text:"Placeholder",
+  whatsapp:"",
+  twitter:"",
+  instagram:"",
+  imgageUrl:"/assets/second.png",
+  active:false,
+},
+  ])
+  // const arr = [1, 2];
+  const  handleChangeUserFocus =( index) => {
+setToBedisplayed(index)
+const newArray = teamMembers.map(arr => ({
+  ...arr,
+  active: arr.id-1===index ?true:false
+ 
+}))
+
+setteamMembers(newArray)
+  }
+  console.log(teamMembers)
   return (
-    <div ref={scrollToTopRef} className=" flex flex-col justify-center relative items-center w-full h-full ">
-      <img
-        className="w-full h-full fixed  top-0 left-0 object-cover "
-        src="/assets/disabled5.jpg"  />
-      <div className="w-full h-full fixed bg-black opacity-60 z-[555] top-0 left-0 object-cover "></div>
-      <div className="h-fit z-[999] font-bold w-full py-32 md:py-52 bg-transparent">
-        <h1 className="text-6xl text-[#801645] text-center">The Team</h1>
-      </div>
-      <div className="w-full bg-white px-2 md:px-12 z-[888] h-full py-[40px] md:py-32">
-        <div className="flex flex-col px-2 md:px-[60px] gap-4 ">
-            <h1 className="text-center text-[#D28F40] text-2xl md:text-5xl mb-2"> 
-                Team Members
-            </h1>
-            <hr className="md:w-[200px] w-[100px] mb-[100px] mx-auto h-[3px] rounded-full bg-[#801645]" />
-          <div className="w-fit items-center justify-center">
-            <div className="md:w-[500px] w-full h-[300px] md:h-[500px] bg-white shadow-2xl shadow-gray-600">
-              <img src="" alt="" />
-            </div>
+    <div
+    ref={scrollToTopRef}
+    >
+    
+   
 
-            <p className="text-center mt-5"> Test User</p>
-            <p className="md:w-[500px] w-full text-center my-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-              quos inventore laborum eaque exercitationem odit minima? Quam
-              eligendi numquam at.
-            </p>
-            <div className="w-[40px] p-1 h-[40px] flex justify-center items-center mx-auto bg-[#D28F40]  rounded-full">
-            <AiOutlineMail className="mx-auto outline-black text-white text-center" />
+      <div className="container w-full h-fit lg:h-[120vh]">
+        <div className="mainbody relative  h-full w-full flex lg:flex-row flex-col  ">
+          <div className="left relative bg-blue-200 w-full lg:w-1/2 h-[500px] lg:h-full flex ">
+            <div className="icons text-xl h-full gap-[20px]  w-[50px] flex flex-col justify-center items-center mt-auto">
+              <a href={teamMembers[toBedisplayed].instagram}>
+                <FaInstagram />
+              </a>
+              <a href={teamMembers[toBedisplayed].twitter}>
+                <FaTwitter />
+              </a>
+             
+              <a href={teamMembers[toBedisplayed].whatsapp}>
+                <FaWhatsapp />
+              </a>
             </div>
-         
+            <img
+              src={teamMembers[toBedisplayed].imgageUrl}
+              className="w-[80%] h-[100%] object-cover -translate-x-1/2 absolute top-1/2 -translate-y-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+          <div className="right flex flex-col lg:pt-[6rem] p-[10px] lg:pl-[3rem] w-full lg:w-1/2  lg:h-full">
+            <h1 className="lg:text-[70px] text-[40px] ">{teamMembers[toBedisplayed].name}</h1>
+            <p className="lg:text-[25px] text-[15px] mb-[1rem] text-gray-800">
+            {teamMembers[toBedisplayed].position}
+            </p>
+            <p className="text-[15px] leading-[24px] tracking-wide mb-[1rem] ">
+            {teamMembers[toBedisplayed].text}
+            </p>
+          </div>
+          <div className="others bg-gray-100 w-full flex gap-[20px] p-[10px] lg:absolute lg:min-w-[50vw] bottom-[3rem] right-[3rem] lg:w-fit ">
+            {teamMembers.map((image,index) => (
+              <div
+                className={`w-[150px] bg-gray-400 ${image?.active ? 'border-[5px]  border-blue-300' : ''} transition-all hover:scale-95 flex justify-center items-center cursor-pointer  h-[150px]`}
+                key={image.id}
+                onClick={() => handleChangeUserFocus(index)}
+              >
+                <img src={image?.imgageUrl} className="w-full h-full object-cover" alt="" />
+              </div>
+            ))}
           </div>
         </div>
       </div>
