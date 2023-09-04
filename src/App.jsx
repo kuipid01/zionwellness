@@ -26,9 +26,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity: 0.5 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+               initial={{ x:-100, }}
+                animate={{ x:0, }}
+                exit={{ opacity:0,}}
+                transition={{duration:.6}}
                 key="home"
               >
                 <Home />
@@ -41,9 +42,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity: 0.5 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+              initial={{ x:-100, }}
+                animate={{ x:0, }}
+                exit={{ opacity:0,}}
+                transition={{duration:.6}}
                 key="contact"
               >
                 <Contact />
@@ -56,9 +58,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity: 0.5 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+              initial={{ x:-100, }}
+                animate={{ x:0, }}
+                exit={{ opacity:0,}}
+                transition={{duration:.6}}
                 key="testimonials"
               >
                 <Testimonials />
@@ -71,9 +74,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity: 0.5 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+              initial={{ x:-100, }}
+                animate={{ x:0, }}
+                exit={{ opacity:0,}}
+                transition={{duration:.6}}
                 key="about"
               >
                 <About />
@@ -86,9 +90,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity: 0.5 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+              initial={{ x:-100, }}
+                animate={{ x:0, }}
+                exit={{ opacity:0,}}
+                transition={{duration:.6}}
                 key="services"
               >
                 <Services />
@@ -101,9 +106,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity: 0.5 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                 initial={{ x:-100, }}
+                animate={{ x:0, }}
+                exit={{ opacity:0,}}
+                transition={{duration:.6}}
                 key="team"
               >
                 <Team />

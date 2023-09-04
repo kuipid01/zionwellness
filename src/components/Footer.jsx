@@ -90,7 +90,7 @@ const Footer = () => {
            
             <FaFacebook /> <FaInstagram />
           </div>
-          <Link to='/contact' >  <button className="px-8 rounded-[20px] w-fit py-3 uppercase font-[600] bg-[#D28F40] text-white">Book an appointment</button></Link>
+          <Link to='/contact' >  <button className="px-8 rounded-[15px] w-full md:w-fit py-3 uppercase font-[600] bg-[#D28F40] text-white">Book an appointment</button></Link>
              
           {/* <div className="w-[300px] relative flex justify-center py-1 items-center bg-white h-[50px]">
             <input

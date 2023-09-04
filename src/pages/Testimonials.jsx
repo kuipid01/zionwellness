@@ -58,11 +58,11 @@ const Testimonials = () => {
     width:`${divWidth}px`,
    
   }
-  const scrollToTopRef = useRef(null);
+  // const scrollToTopRef = useRef(null);
 
-  useEffect(() => {
-    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
-  },[]);
+  // useEffect(() => {
+  //   scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+  // },[]);
 
 const setLeft  = () => {
 if (sliderPosition===0) {
@@ -88,13 +88,16 @@ const setRight  = () => {
     }
   
   return (
-    <div ref={scrollToTopRef}  className=" flex flex-col justify-center relative items-center w-full h-full ">
-      <img
-        className="w-full h-full fixed  top-0 left-0 object-top object-cover "
-        src="/assets/disabled1.jpg"    />
+    <div
+    //  ref={scrollToTopRef}
+       className=" flex flex-col justify-center relative items-center w-full h-full ">
+     
  <div className="h-fit z-[999] font-bold w-full py-32 md:py-52 bg-transparent">
         <h1 className="md:text-6xl text-2xl text-[#D28F40]  text-center">Testimonials</h1>
       </div>
+      <img
+        className="w-full h-full fixed  top-0 left-0 object-top object-cover "
+        src="/assets/disabled1.jpg"    />
       <div className="relative flex justify-center pr-5 sm:pr-0 items-center  bg-gray-100 w-full h-[70vh]">
 <div style={widthStyle} className=" flex p-3  overflow-hidden h-full  mx-auto">
 <div  style={Slidestyle} className="w-fit  flex justify-center items-center  flex-row h-full gap-4">

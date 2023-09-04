@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
-import {
+import  { useEffect,useState, useRef } from "react";import {
   AiOutlineShoppingCart,
   AiOutlineMenu,
   AiOutlineClose,
@@ -13,25 +12,13 @@ const Navbar = () => {
     {
       id: 1,
       name: "Home",
-      links: false,
+      links: true,
       nav: "/",
     },
     {
       id: 2,
       name: "Services",
-      links: [
-        {
-          id: 21,
-          name: "Service 1",
-          nav: "/services/service1",
-        },
-        {
-          id: 22,
-          name: "Service 2",
-          nav: "/services/service2",
-        },
-        // Add more sub-links as needed
-      ],
+      links: false,
       nav: "/services", // You can keep the parent link here
     },
     {
@@ -70,26 +57,34 @@ const Navbar = () => {
     setNavLinks(newLinks);
   };
   const isActive = () => {
+   
     window.scrollY === 0 ? setNavShow(false) : setNavShow(true);
   };
-  useEffect(() => {
-    window.addEventListener("scroll", isActive);
-
-    return () => {
-      window.removeEventListener("scroll", isActive);
-    };
-  });
-
+  
+console.log( window.scrollY )
   let navStyle = {
     transition: "top .7s ease-in-out",
   };
+   const scrollToTopRef = useRef(null);
+
+   useEffect(() => {
+    window.addEventListener('scroll', () => isActive())
+   
+    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+
+    return () => {
+    window.removeEventListener('scroll',() => isActive() )
+     }
+  },[]);
+
+
   return (
-    <div
+    <div ref={scrollToTopRef} 
       className={`w-full sticky top-0 left-0 z-[9999] font-[500] transition-all  flex justify-center bg-[#801645] text-white items-center ${
-        navShow ? "h-[15vh] " : "h-[20vh] "
+        navShow ? "h-[10vh] md:h-[12vh]" : "h-[15vh] md:h-[20vh] "
       } z-[9999999]`}
     >
-      <nav className="w-[97%] md:w-[80%] flex justify-between h-full items-center">
+      <nav className="w-[97%] md:w-[95%] flex justify-between h-full items-center">
         <div className="flex h-full items-center">
           <div
             className={` flex ${
@@ -106,7 +101,7 @@ const Navbar = () => {
 
             {/* <img src="/assets/ZionFire.png"  className="w-full hidden md:flex h-full object-contain" alt="" /> */}
           </div>
-          <span className="text-gray-100 md:hidden text-[20px] font-[600]">
+          <span className="text-gray-100 md:hidden text-[15px] font-[600]">
             Zion Support Services
           </span>
         </div>
@@ -126,21 +121,21 @@ const Navbar = () => {
           </div>
         )}
         <div className="hidden  w-fit h-full md:flex items-center justify-center">
-          <ul className="flex h-full  items-center gap-5 uppercase text-lg font-[400]">
+          <ul className="flex  h-full  items-center gap-5 uppercase text-lg font-[400]">
             {navLinks.map((links, index) => (
               <Link key={links.id} to={links.nav}>
                 <li
                   onClick={() => changeLink(index)}
                   className={`transition-all ${
                     links.links && "border-b-2 text-[#D28F40] border-[#D28F40]"
-                  } hover:text-red-300 cursor-pointer text-[17px] `}
+                  } hover:text-red-300 cursor-pointer text-[16px] `}
                   key={links.id}
                 >
                   {links.name}
                 </li>
               </Link>
             ))}
-            <li className="flex bg-[#dc8f40]   px-3 py-1 rounded-2xl">
+            <li className="flex hover:border hover:bg-[#ffffff] hover:text-[#dc8f40]   hover:border-1 hover:border-[#dc8f40]  bg-[#dc8f40]   px-3 py-1 rounded-2xl">
             <a className='flex items-center gap-2' href="tel:9051290512"> <span><AiFillPhone /></span>0410546651<span></span> </a>
            
             </li>
@@ -152,7 +147,7 @@ const Navbar = () => {
                 alt=""
               />{" "}
             </li>
-            <li className="w-[2px] bg-gray-400 text-gray-400 h-[20px]"></li>
+         
             {/* <div className="flex text-2xl gap-5 ">
               <AiOutlineShoppingCart className="cursor-pointer hover:text-red-300" />
               <BiUser className="cursor-pointer hover:text-red-300" />

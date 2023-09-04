@@ -47,16 +47,18 @@ const Services = () => {
       details: "Community Nursing Care",
     },
   ]);
-  const scrollToTopRef = useRef(null);
+  // const scrollToTopRef = useRef(null);
   let textStyle = {
     fontFamily: " Jost, sans-serif",
   };
-  useEffect(() => {
-    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
-  });
+  // useEffect(() => {
+  //   scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+  // });
 
   return (
-    <div  ref={scrollToTopRef}  className=" flex flex-col justify-center relative items-center w-full h-full ">
+    <div  
+    // ref={scrollToTopRef}  
+    className=" flex flex-col justify-center relative items-center w-full h-full ">
       <img
         className="w-full h-full fixed  top-0 left-0 object-cover "
         src="/assets/disabled2.jpg"

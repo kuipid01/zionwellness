@@ -1,14 +1,16 @@
 
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
-import  { useEffect, useRef } from "react";
+// import  { useEffect, useRef } from "react";
 const Contact = () => {
-  const scrollToTopRef = useRef(null);
+  // const scrollToTopRef = useRef(null);
 
-  useEffect(() => {
-    scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
-  });
+  // useEffect(() => {
+  //   scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+  // });
   return (
-    <div ref={scrollToTopRef} className=" flex flex-col justify-center relative items-center w-full h-full ">
+    <div 
+    // ref={scrollToTopRef}
+     className=" flex flex-col justify-center relative items-center w-full h-full ">
       <img
         className="w-full h-full fixed  top-0 left-0  object-contain object-center md:object-cover "
         src="/assets/aboutUs.jpg"

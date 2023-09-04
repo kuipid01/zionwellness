@@ -4,14 +4,14 @@ const About = () => {
   let textStyle = {
     fontFamily: " Jost, sans-serif",
   };
-  const scrollToTopRef = useRef(null);
+  // const scrollToTopRef = useRef(null);
 
-  useEffect(() => {
-    scrollToTopRef.current.scrollIntoView({ behaviour: "smooth" });
-  });
+  // useEffect(() => {
+  //   scrollToTopRef.current.scrollIntoView({ behaviour: "smooth" });
+  // });
   return (
     <div
-      ref={scrollToTopRef}
+      // ref={scrollToTopRef}
       className=" flex flex-col justify-center relative items-center w-full h-full "
     >
       <img
@@ -32,9 +32,7 @@ const About = () => {
           difference in the lives of those with disability. The goal is to make
           each of our participant’s lives easier, fairer and more involved by
           participating within their own communities. Zion Support Services is a
-          company that was established with the sole aim of offering disability
-          support services that puts the participant as a priority in creating
-          opportunities, promoting independence and progression in a safe and
+          company that was establishe:ence and progression in a safe and
           non-discriminative environment.
         </p>
         <hr className="w-full h-[2px] my-4 bg-gray-400" />

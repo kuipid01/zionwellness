@@ -2,16 +2,18 @@
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaInstagram, FaTwitter, FaFacebook, FaWhatsapp } from "react-icons/fa";
-import LazyLoad from "react-lazyload";
+// import LazyLoad from "react-lazyload";
 import ProgressiveImage from "react-progressive-image";
 import { motion } from "framer-motion";
 const Team = () => {
-  const scrollToTopRef = useRef(null);
+  // const scrollToTopRef = useRef(null);
 
-  useEffect(() => {
-    scrollToTopRef.current.scrollIntoView({ behaviour: "smooth" });
-  });
+  // useEffect(() => {
+    
+  //   scrollToTopRef.current.scrollIntoView({ behaviour: "smooth" });
+  // });
   const [toBedisplayed, setToBedisplayed] = useState(0);
+  
   const [teamMembers, setteamMembers] = useState([
     {
       id: 1,
@@ -49,6 +51,7 @@ const Team = () => {
     },
   ]);
   // const arr = [1, 2];
+ 
   const handleChangeUserFocus = (index) => {
     setToBedisplayed(index);
     const newArray = teamMembers.map((arr) => ({
@@ -60,7 +63,9 @@ const Team = () => {
   };
 
   return (
-    <div ref={scrollToTopRef} className="w-full">
+    <div 
+    // ref={scrollToTopRef}
+     className="w-full">
       <div className="imageContainer w-full h-fit md:h-[120vh]">
         <div className="mainbody relative  h-full w-full flex md:flex-row flex-col  ">
           <motion.div

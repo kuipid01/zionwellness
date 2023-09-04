@@ -13,21 +13,23 @@ import Ndis from "../../components/Ndis";
 import Support from "../../components/Support";
 import Slide from "../../components/Slide";
 const Home = () => {
-   const scrollToTopRef = useRef(null);
+//    const scrollToTopRef = useRef(null);
 
   
-    useEffect(() => {
+//     useEffect(() => {
   
-     scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
+//      scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
   
- });
+//  });
 
   return (
     
     // <>
     // {/* <Slide/> */}
     // </>
-     <div ref={scrollToTopRef} className="w-full h-full relative">
+     <div 
+    //  ref={scrollToTopRef}
+      className="w-full h-full relative">
        {/* <img
          className="w-full h-full absolute  top-0 left-0 object-cover b"
          src="/assets/bg.jpg"
