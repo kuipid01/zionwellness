@@ -138,7 +138,7 @@ const Home = () => {
                    and overall wellness.
                  </span>
                </span>
-               <Link to='/contact' >  <button className="px-8 mt-6 w-fit py-3 uppercase font-[600] bg-[#D28F40] text-white">Book an appointment</button></Link>
+               <Link to='/contact' >  <button className="px-8 rounded-[20px] mt-6 w-fit py-3 uppercase font-[600] bg-[#D28F40] text-white">Book an appointment</button></Link>
              
              </p>
            </div>

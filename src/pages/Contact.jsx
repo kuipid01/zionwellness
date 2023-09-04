@@ -10,8 +10,8 @@ const Contact = () => {
   return (
     <div ref={scrollToTopRef} className=" flex flex-col justify-center relative items-center w-full h-full ">
       <img
-        className="w-full h-full fixed  top-0 left-0 object-cover "
-        src="https://img.freepik.com/free-photo/top-view-chat-bubbles-with-telephone-receiver-copy-space_23-2148796078.jpg?t=st=1688602398~exp=1688602998~hmac=219b6f85c2835c34af6427bfe7f99cbf1d69af7dd75069941973bbcb21cf99b9"
+        className="w-full h-full fixed  top-0 left-0  object-contain object-center md:object-cover "
+        src="/assets/aboutUs.jpg"
       />
       <div className="h-fit z-[999] font-bold w-full py-32 md:py-52 bg-transparent">
         <h1 className="text-6xl text-[#D28F40] text-center">Contact Us</h1>

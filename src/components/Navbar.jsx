@@ -4,6 +4,7 @@ import {
   AiOutlineShoppingCart,
   AiOutlineMenu,
   AiOutlineClose,
+  AiFillPhone,
 } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import { Link } from "react-router-dom";
@@ -18,8 +19,20 @@ const Navbar = () => {
     {
       id: 2,
       name: "Services",
-      links: false,
-      nav: "/services",
+      links: [
+        {
+          id: 21,
+          name: "Service 1",
+          nav: "/services/service1",
+        },
+        {
+          id: 22,
+          name: "Service 2",
+          nav: "/services/service2",
+        },
+        // Add more sub-links as needed
+      ],
+      nav: "/services", // You can keep the parent link here
     },
     {
       id: 3,
@@ -78,31 +91,39 @@ const Navbar = () => {
     >
       <nav className="w-[97%] md:w-[80%] flex justify-between h-full items-center">
         <div className="flex h-full items-center">
+          <div
+            className={` flex ${
+              navShow
+                ? "md:w-[80px] w-[60px] h-[50px] md:h-[60px]"
+                : " w-[80px] h-[80px] md:w-[100px] md:h-[100px] "
+            }  transition-all  `}
+          >
+            <img
+              src="/assets/singleLogo.png"
+              className="w-full   h-full object-contain"
+              alt=""
+            />
 
-        
-        <div className={` flex ${
-        navShow ? "md:w-[80px] w-[60px] h-[50px] md:h-[60px]" : " w-[80px] h-[80px] md:w-[100px] md:h-[100px] "
-      }  transition-all  ` }>
-         <img src="/assets/singleLogo.png"  className="w-full  md:hidden h-full object-contain" alt="" />
-       
-          <img src="/assets/ZionFire.png"  className="w-full hidden md:flex h-full object-contain" alt="" />
-        </div>
-        <span className='text-gray-100 md:hidden text-[20px] font-[600]'>Zion Support Services</span>
+            {/* <img src="/assets/ZionFire.png"  className="w-full hidden md:flex h-full object-contain" alt="" /> */}
+          </div>
+          <span className="text-gray-100 md:hidden text-[20px] font-[600]">
+            Zion Support Services
+          </span>
         </div>
         {navMobile ? (
-           <div className="w-fit h-fit p-2 mr-2 rounded-full bg-[#D28F40]">
-          <AiOutlineClose
-            onClick={() => setNavMobile(false)}
-            className="text-[30px] cursor-pointer hover:text-[#D28F40] transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
-          /> </div>
+          <div className="w-fit h-fit p-2 mr-2 rounded-full bg-[#D28F40]">
+            <AiOutlineClose
+              onClick={() => setNavMobile(false)}
+              className="text-[30px] cursor-pointer hover:text-[#D28F40] transition-all hover:text-[28px] md:hidden  font-[900] text-gray-100"
+            />{" "}
+          </div>
         ) : (
           <div className="w-fit h-fit p-2 flex md:hidden mr-2  rounded-full bg-[#D28F40]">
- <AiOutlineMenu
-            onClick={() => setNavMobile(true)}
-            className="text-[25px] cursor-pointer  hover:text-[#D28F40] transition-all  font-[500] text-white"
-          />
+            <AiOutlineMenu
+              onClick={() => setNavMobile(true)}
+              className="text-[25px] cursor-pointer  hover:text-[#D28F40] transition-all  font-[500] text-white"
+            />
           </div>
-         
         )}
         <div className="hidden  w-fit h-full md:flex items-center justify-center">
           <ul className="flex h-full  items-center gap-5 uppercase text-lg font-[400]">
@@ -119,6 +140,18 @@ const Navbar = () => {
                 </li>
               </Link>
             ))}
+            <li className="flex bg-[#dc8f40]   px-3 py-1 rounded-2xl">
+            <a className='flex items-center gap-2' href="tel:9051290512"> <span><AiFillPhone /></span>0410546651<span></span> </a>
+           
+            </li>
+            <li className="w-[100px] h-[50px] bg-white">
+              {" "}
+              <img
+                className="w-full h-full object-fill"
+                src="https://www.platinumcareservices.com.au/wp-content/uploads/2021/03/NDIS-Logo-sidebar-e1669253229454.webp"
+                alt=""
+              />{" "}
+            </li>
             <li className="w-[2px] bg-gray-400 text-gray-400 h-[20px]"></li>
             {/* <div className="flex text-2xl gap-5 ">
               <AiOutlineShoppingCart className="cursor-pointer hover:text-red-300" />
@@ -139,7 +172,11 @@ const Navbar = () => {
         <div className="  w-full px-5 py-7 text-white h-full md:hidden flex flex-col items-center justify-center">
           <ul className="flex flex-col items-end h-full  w-full gap-5 uppercase text-lg font-[400]">
             {navLinks.map((links, index) => (
-              <Link onClick={() => setNavMobile(false)} key={links.id} to={links.nav}>
+              <Link
+                onClick={() => setNavMobile(false)}
+                key={links.id}
+                to={links.nav}
+              >
                 <li
                   onClick={() => changeLink(index)}
                   className={`transition-all ${
@@ -151,8 +188,6 @@ const Navbar = () => {
                 </li>
               </Link>
             ))}
-
-        
           </ul>
         </div>
       </div>

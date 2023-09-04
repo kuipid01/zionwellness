@@ -5,7 +5,7 @@ const Services = () => {
   const [services, setServices] = useState([
     {
       id: 1,
-      details: "	Assistance with Daily Personal Activities (High-Intensity)",
+      details: "Assistance with Daily Personal Activities (High-Intensity)",
     },
 
     {
@@ -44,11 +44,13 @@ const Services = () => {
 
     {
       id: 9,
-      details: "		Community Nursing Care  ",
+      details: "Community Nursing Care",
     },
   ]);
   const scrollToTopRef = useRef(null);
-
+  let textStyle = {
+    fontFamily: " Jost, sans-serif",
+  };
   useEffect(() => {
     scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
   });
@@ -62,16 +64,13 @@ const Services = () => {
       <div className="w-full h-full fixed bg-black opacity-60 z-[555] top-0 left-0 object-cover "></div>
       <div className="h-fit z-[999] flex md:flow-row flex-col justify-center items-center gap-7 font-bold w-full py-32 md:py-52 bg-transparent">
         <div className="md:w-2/3 px-[10px] w-full flex md:flow-row flex-col gap-8">
-          <h1 className="md:text-6xl flex gap-2 md:flex-col font-[500] flex-1 text-4xl  text-[#B20027] text-center">
-            <span>Our </span>
-            <span>Services</span>
-          </h1>
+        <h1 className="text-6xl text-[#D28F40] text-center">Our services</h1>
           <div className="flex flex-1 flex-col">
             {/* <h1 className="md:text-3xl md:text-center text-lg left-9 font-light md:font-semibold mb-4 text-[#A700AE]">
               What services can we at Zion Support Services deliver under the
               NDIS
             </h1> */}
-            <p className=" md:leading-10 leading-6 text-gray-200 font-[300]">
+            <p  style={textStyle} className=" md:leading-10 text-[18px] md:text-[25px] leading-6  text-gray-200 font-[300]">
               Zion Support  Services consistently deliver a standard of
               excellence in disability care by placing people at the heart of
               everything we do.
@@ -81,7 +80,7 @@ const Services = () => {
       </div>
       <div className="w-full z-[999] bg-gray-200 h-fit py-32 justify-center items-center">
         <div className="flex px-6 flex-col gap-5">
-          <h1 className="md:text-4xl text-xl font-light md:font-normal  leading-9 text-center mb-3">
+          <h1  style={textStyle}  className="md:text-4xl text-xl font-light md:font-normal  leading-9 text-center mb-3">
             These supports fall into categories aligned with their purpose.
             These are:
           </h1>
@@ -91,7 +90,7 @@ const Services = () => {
                 key={test.id}
                 className="md:w-[20%] w-full text-xl  flex justify-center items-center py-[20px] px-4 items-left  h-fit  bg-white text-gray-700"
               >
-                <p className=" text-center text-[15px]">
+                <p  style={textStyle}  className=" text-center text-[15px] md:text-[20px]">
                   {" "}
                   &apos;{test.details}&apos;
                 </p>

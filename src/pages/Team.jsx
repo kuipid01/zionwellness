@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaInstagram, FaTwitter, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import LazyLoad from "react-lazyload";
+import ProgressiveImage from "react-progressive-image";
 import { motion } from "framer-motion";
 const Team = () => {
   const scrollToTopRef = useRef(null);
@@ -16,7 +17,7 @@ const Team = () => {
       id: 1,
       name: "Isaac Akefe",
       position: "Director,Chief logistics officer",
-      text: "Welcome to Zion Disability Service, where our mission is driven by compassion and responsibility. As the Director, I take great pride in leading our dedicated team that strives to empower individuals with disabilities. At Zion, we believe in fostering a sense of community and independence. Our commitment goes beyond services  U+2013 we’re here to understand and support each individual’s unique journey. By exploring our comprehensive offerings and impactful stories, you’ll see that we’re more than service providers; we’re your partners on the path to a more inclusive and fulfilling life. Thank you for considering Zion Disability Service as your trusted choice. Warm regards",
+      text: "Welcome to Zion Disability Service, where our mission is driven by compassion and responsibility. As the Director, I take great pride in leading our dedicated team that strives to empower individuals with disabilities. At Zion, we believe in fostering a sense of community and independence. Our commitment goes beyond services. We’re here to understand and support each individual’s unique journey. By exploring our comprehensive offerings and impactful stories, you’ll see that we’re more than service providers; we’re your partners on the path to a more inclusive and fulfilling life. Thank you for considering Zion Disability Service as your trusted choice. Warm regards",
       whatsapp: "",
       twitter: "",
       instagram: "",
@@ -82,16 +83,17 @@ const Team = () => {
                 <FaWhatsapp />
               </a>
             </div>
-            <LazyLoad height={200} offset={100} once>
+            <ProgressiveImage src="large-image.jpg" placeholder="tiny-image.jpg">
+            {src => 
               <img
                 src={teamMembers[toBedisplayed].imgageUrl}
                 className="w-[80%] h-[100%] object-cover -translate-x-1/2 absolute top-1/2 -translate-y-1/2 left-1/2"
                 alt=""
-              />
-            </LazyLoad>
+              />}
+            </ProgressiveImage>
           </motion.div>
           <div className="right flex flex-col md:pt-[6rem] p-[20px] md:pl-[3rem] w-full md:w-1/2  md:h-full">
-            <h1 className="md:text-[70px] text-[40px] ">
+            <h1 className="md:text-[70px] text-[#D28F40] text-[40px] ">
               {teamMembers[toBedisplayed].name}
             </h1>
             <p className="md:text-[25px] capitalize text-[15px] mb-[1rem] text-gray-800">
@@ -110,13 +112,13 @@ const Team = () => {
                 key={image.id}
                 onClick={() => handleChangeUserFocus(index)}
               >
-                <LazyLoad height={100} offset={100} once>
-                  <img
+               <ProgressiveImage src="large-image.jpg" placeholder="tiny-image.jpg">
+               {src => <img
                     src={image?.imgageUrl}
                     className="w-full max-h-[120px]  h-full object-cover"
                     alt=""
-                  />
-                </LazyLoad>
+                  />}
+               </ProgressiveImage>
               </div>
             ))}
           </div>
