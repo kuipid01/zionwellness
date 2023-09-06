@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useRef } from "react";
+import React, {useState, useEffect, useRef } from "react";
 import Navbar from "../../components/Navbar";
 import Slider from "../../components/Slider";
 import { FaQuoteLeft, FaInstagram, FaFacebook } from "react-icons/fa";
@@ -12,21 +12,17 @@ import { Link } from "react-router-dom";
 import Ndis from "../../components/Ndis";
 import Support from "../../components/Support";
 import Slide from "../../components/Slide";
+import Spinner from "../../components/Spinner";
+import { useLocation } from 'react-router-dom';
 const Home = () => {
-//    const scrollToTopRef = useRef(null);
 
-  
-//     useEffect(() => {
-  
-//      scrollToTopRef.current.scrollIntoView({behaviour:'smooth'});
-  
-//  });
 
   return (
     
     // <>
     // {/* <Slide/> */}
     // </>
+   
      <div 
     //  ref={scrollToTopRef}
       className="w-full h-full relative">
@@ -159,7 +155,8 @@ const Home = () => {
      
    
  
-     </div>
+     </div> 
+
   );
 };
 

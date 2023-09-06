@@ -13,7 +13,10 @@ import Team from "./pages/Team";
 // import NotFound from './components/NotFound/NotFound'
 
 function App() {
+const transitions = {duration:1 , 
+  ease: [0.6, 0.01, 0.9, 0.05],
 
+}
   return (
     <div className="App">
       {/* Routes for pages */}
@@ -26,10 +29,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-               initial={{ x:-100, }}
-                animate={{ x:0, }}
-                exit={{ opacity:0,}}
-                transition={{duration:.6}}
+               initial={{ opacity:0, }}
+                animate={{ opacity:1, }}
+                exit={{ opacity:0, }}
+                transition={transitions}
                 key="home"
               >
                 <Home />
@@ -42,10 +45,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-              initial={{ x:-100, }}
-                animate={{ x:0, }}
-                exit={{ opacity:0,}}
-                transition={{duration:.6}}
+              initial={{ opacity:0,y:'100%' }}
+                animate={{ opacity:1,y:0 }}
+                exit={{ opacity:0,y:'100%' }}
+                transition={transitions}
                 key="contact"
               >
                 <Contact />
@@ -58,10 +61,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-              initial={{ x:-100, }}
-                animate={{ x:0, }}
-                exit={{ opacity:0,}}
-                transition={{duration:.6}}
+              initial={{ opacity:0,y:'100%' }}
+                animate={{ opacity:1,y:0 }}
+                exit={{ opacity:0,y:'100%' }}
+                transition={transitions}
                 key="testimonials"
               >
                 <Testimonials />
@@ -74,10 +77,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-              initial={{ x:-100, }}
-                animate={{ x:0, }}
-                exit={{ opacity:0,}}
-                transition={{duration:.6}}
+              initial={{ opacity:0,y:'100%' }}
+                animate={{ opacity:1,y:0 }}
+                exit={{ opacity:0,y:'100%' }}
+                transition={transitions}
                 key="about"
               >
                 <About />
@@ -90,10 +93,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-              initial={{ x:-100, }}
-                animate={{ x:0, }}
-                exit={{ opacity:0,}}
-                transition={{duration:.6}}
+              initial={{ opacity:0,y:'100%' }}
+                animate={{ opacity:1,y:0 }}
+                exit={{ opacity:0,y:'100%' }}
+                transition={transitions}
                 key="services"
               >
                 <Services />
@@ -106,10 +109,10 @@ function App() {
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                 initial={{ x:-100, }}
-                animate={{ x:0, }}
-                exit={{ opacity:0,}}
-                transition={{duration:.6}}
+                 initial={{ opacity:0,y:'100%' }}
+                animate={{ opacity:1,y:0 }}
+                exit={{ opacity:0,y:'100%' }}
+                transition={transitions}
                 key="team"
               >
                 <Team />
