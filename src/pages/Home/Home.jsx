@@ -15,14 +15,40 @@ import Slide from "../../components/Slide";
 import Spinner from "../../components/Spinner";
 import { useLocation } from 'react-router-dom';
 const Home = () => {
+  const [firstTimeLoad, setFirstTimeLoad] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    // Check if it's the first time loading the page
+    const hasVisitedBefore = localStorage.getItem('hasVisitedBefore');
+
+    if (!hasVisitedBefore) {
+      // This is the first time loading the page
+      console.log('First time loading the page.');
+
+      // Set a flag in localStorage to indicate that the user has visited before
+      localStorage.setItem('hasVisitedBefore', 'true');
+
+      // Simulate loading time (you can replace this with actual data fetching)
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
+
+      // Update the state to indicate the first-time load
+      setFirstTimeLoad(true);
+    } else {
+      // If not the first-time load, hide the loader immediately
+      setIsLoading(false);
+    }
+  }, []);
 
   return (
     
     // <>
     // {/* <Slide/> */}
     // </>
-   
+    <div>
+    {isLoading ?  <Spinner/> : (
      <div 
     //  ref={scrollToTopRef}
       className="w-full h-full relative">
@@ -156,7 +182,8 @@ const Home = () => {
    
  
      </div> 
-
+ )}
+ </div>
   );
 };
 
