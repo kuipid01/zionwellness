@@ -23,17 +23,17 @@ const Footer = () => {
       />
       <div className="w-full max-h-full bg-[#801645] text-white  absolute object-cover h-full top-0 left-0 "></div>
       <div className="md:w-[90%] z-[999] w-full px-3 py-20  text-white justify-between gap-9 md:gap-0 flex md:flex-row flex-col mx-auto h-fit ">
-        <div className="md:w-[30%] mb-9 w-full">
-          <div className={`mx-auto w-[150px] h-[150px]`}>
-          <div className="w-[200px] h-[100px] bg-white">
+        <div className="md:w-[30%]  flex items-center justify-center flex-col mb-9 w-full">
+
+            <div className="w-[200px] mb-4  h-[100px] bg-white">
               {" "}
               <img
-                className="w-full h-full object-fill"
+                className="w-full  h-full object-fill"
                 src="https://www.platinumcareservices.com.au/wp-content/uploads/2021/03/NDIS-Logo-sidebar-e1669253229454.webp"
                 alt=""
               />{" "}
             </div>
-          </div>
+     
           {/* <img src="https://scicarers.com.au/wp-content/uploads/2021/05/sci-care-1024x265.jpg" alt="" /> */}
           <p className="md:text-left leading-[30px] text-center font-[300] md:font-[400] text-[15px]">
             The National Disability Insurance Scheme (NDIS) supports people with
@@ -44,7 +44,6 @@ const Footer = () => {
             ABN | 54 366 429 676
           </p>
           <hr className="w-full h-[1px] bg-gray-700" />
-  
         </div>
         <div>
           <h1 className="text-xl text-[#D28F40]  mb-5">Quick Links</h1>
@@ -87,11 +86,15 @@ const Footer = () => {
             <span> 8/70 Freeman road Durack 4077 </span>
           </p>
           <div className="w-fit gap-[3rem] text-4xl pb-[3rem] text-[#D28F40]    mx-auto flex justify-between">
-           
             <FaFacebook /> <FaInstagram />
           </div>
-          <Link to='/contact' >  <button className="px-8 rounded-[15px] w-full md:w-fit py-3 uppercase font-[600] bg-[#D28F40] text-white">Book an appointment</button></Link>
-             
+          <Link to="/contact">
+            {" "}
+            <button className="px-8 rounded-[15px] w-full md:w-fit py-3 uppercase font-[600] bg-[#D28F40] text-white">
+              Book an appointment
+            </button>
+          </Link>
+
           {/* <div className="w-[300px] relative flex justify-center py-1 items-center bg-white h-[50px]">
             <input
               type="text"
@@ -107,7 +110,7 @@ const Footer = () => {
       </div>
 
       <p className="text-white py-2 relative font-[300] bg-gray-800 w-full  text-[12px] md:text-b[16px] items-center flex mx-auto text-center">
-        Copyright &copy; Devkuipid 2023 | Inspired{" "}
+       <p> Copyright &copy; <a target="blank" href="https://devkuipid.netlify.app"> Devkuipid 2023 | Inspired{" "}</a></p>
         <br className="flex md:hidden" /> by Major Wellness Center - All Rights
         Reserved | Image by{" "}
         <a href="https://www.freepik.com/free-photo/portrait-smiley-student-wheelchair_12296566.htm#query=person%20with%20disability&position=8&from_view=search&track=ais">

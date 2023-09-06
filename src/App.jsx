@@ -29,9 +29,9 @@ const transitions = {duration:1 ,
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-               initial={{ opacity:0, }}
-                animate={{ opacity:1, }}
-                exit={{ opacity:0, }}
+                initial={{ opacity:0, y:'2%' }}
+                animate={{ opacity:1, y:'0%' }}
+                exit={{ opacity:0, y:'2%' }}
                 transition={transitions}
                 key="home"
               >
@@ -45,9 +45,9 @@ const transitions = {duration:1 ,
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity:0, }}
-                animate={{ opacity:1, }}
-                exit={{ opacity:0, }}
+                  initial={{ opacity:0, y:'2%' }}
+                animate={{ opacity:1, y:'0%' }}
+                exit={{ opacity:0, y:'2%' }}
                 transition={transitions}
                 key="contact"
               >
@@ -61,9 +61,9 @@ const transitions = {duration:1 ,
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity:0, }}
-                animate={{ opacity:1, }}
-                exit={{ opacity:0, }}
+                   initial={{ opacity:0, y:'2%' }}
+                animate={{ opacity:1, y:'0%' }}
+                exit={{ opacity:0, y:'2%' }}
                 transition={transitions}
                 key="testimonials"
               >
@@ -77,9 +77,9 @@ const transitions = {duration:1 ,
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity:0, }}
-                animate={{ opacity:1, }}
-                exit={{ opacity:0, }}
+                   initial={{ opacity:0, y:'2%' }}
+                animate={{ opacity:1, y:'0%' }}
+                exit={{ opacity:0, y:'2%' }}
                 transition={transitions}
                 key="about"
               >
@@ -93,9 +93,9 @@ const transitions = {duration:1 ,
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                initial={{ opacity:0, }}
-                animate={{ opacity:1, }}
-                exit={{ opacity:0, }}
+                   initial={{ opacity:0, y:'2%' }}
+                animate={{ opacity:1, y:'0%' }}
+                exit={{ opacity:0, y:'2%' }}
                 transition={transitions}
                 key="services"
               >
@@ -109,9 +109,9 @@ const transitions = {duration:1 ,
           element={
             <AnimatePresence  mode='wait'>
               <motion.div
-                   initial={{ opacity:0, }}
-                animate={{ opacity:1, }}
-                exit={{ opacity:0, }}
+                      initial={{ opacity:0, y:'2%' }}
+                animate={{ opacity:1, y:'0%' }}
+                exit={{ opacity:0, y:'2%' }}
                 transition={transitions}
                 key="team"
               >

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const Slider = () => {
   const defaultBackgroundColor = "#D28F40";
   const darkerBackgroundColor = "#A1702B"; // Choose a darker color variant
@@ -69,7 +70,7 @@ flex-col -translate-x-1/2"
           }}
           className="md:w-fit w-[80%] px-[60px] py-4 mx-auto font-bold uppercase bg-[#D28F40] text-white rounded-md"
         >
-          Learn More
+         <Link to='/services'>Learn More</Link> 
         </motion.button>
       </div>
     </div>
